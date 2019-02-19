@@ -1,6 +1,4 @@
-div{
-    overflow: scroll
-}
+/* ------------------HOME PAGE --------------------------*/
 .intro{
     display:flex;
     flex-direction:column;
@@ -9,74 +7,84 @@ div{
     padding-left:50px;
     justify-content: center;
     align-items:center;
+    background:url('https://s3.us-east-2.amazonaws.com/chelly-website/website-images/bg.png');
+}
+#cc-logo{
+    width:150px;
+    float:right;
+    padding: 10px;
 }
 
+/* ------------------FONT SIZES --------------------------*/
 h1{
     font-family:inherit;
     font-size:inherit;
     line-height:inherit;
 }
-
 .title-top{
     font-size:120px;
     font-family:"Roboto Mono";
-    line-height:150px;
+    line-height:130px;
     font-weight:bold;
 }
-
-
 h2{
     font-family: inherit;
     margin-left:inherit;
     font-size:inherit;
     line-height:inherit;
+    color:inherit;
 }
-
 .sub-title{
     font-family: "Roboto";
-    margin-left:20px;
-    font-size:35px;
-    line-height:50px;
+    font-size:40px;
+    line-height:60px;
 }
-
 h3{
     font-family: inherit;
     font-size:inherit;
     padding-left:inherit;
 }
-
 .sml-title{
     font-family: "Roboto Mono";
     font-size:25px;
-    padding-left:60px;
+    /* padding-left:60px; */
 }
-
 h4{
     font-family: inherit;
     font-size:inherit;
     padding-left:inherit;
 }
-
 .lil-title{
     font-family: "Open Sans";
     font-size:20px;
-    padding-left:60px;
+    /* padding-left:60px; */
     font-weight:bold;
     color: #fc9f9f;
 }
-
 p{
     font-family: "Open Sans";
-    font-size: 24px;
+    font-size: inherit;
+}
+.contact-text{
+    font-size:24px;
 }
 mark{
     background-color: inherit;
 }
-
 .mark-title{
     background-color: #fc9f9f
 }
+li{
+    font-family: "Open Sans";
+    font-size: 24px;
+    line-height:35px;
+}
+ul{
+    margin: 0px 100px 0px 100px;
+}
 
+
+/* ------------------NAVBAR --------------------------*/
 .topnav {
     background-color: white;
     overflow: hidden;
@@ -86,34 +94,33 @@ mark{
     z-index:99;
     padding-top:14px;
   }
-  
-a{
-    color:black;
-    /* font-weight:bolder; */
-    font-size: 20px;
-    text-decoration:none;
-}
-
   .topnav a {
     float: left;
     color: black;
     text-align: center;
     padding: 14px 16px;
-    font-family: Roboto
+    font-family: Roboto;
+    font-size:20px;
   }
-  
   .topnav a:hover {
     background-color: #482f7f00;
     color: #fc9f9f;
     text-decoration: none;
   }
-  
   .topnav a.active {
     background-color: #482f7f00;
     text-decoration: none;
     color: #fc9f9f
   }
+  i{
+    border: solid black;
+    border-width: 0 15px 15px 0;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom:15px
+  }
 
+  /* ------------------ABOUT SECTION --------------------------*/
   #about{
       background-color:#f1f1f1;
       height: 95vh;
@@ -123,24 +130,113 @@ a{
       align-items: center;
       overflow: hidden;
   }
+  .program{
+    font-family: "Roboto Mono";
+    font-size:16px;
+    line-height:0px;
+    margin:0px;
+    text-indent:50px;
+    padding-left:10px;
+}
+.program-class{
+    font-family: "Roboto Mono";
+    font-size:16px;
+    line-height:0px;
+    margin:0px;
+    color: #4033a0;
+    padding-left:10px;
+}
+.about-window{
+    background: #a8a8a8;
+    display:flex;
+    flex-direction:column;
+    width: 700px
+}
+.about-title{
+    text-align:center;
+    font-family: "Roboto Mono";
+    background: #d5d5d5;
+    padding: 10px;
+}
+.resume-link{
+    font-family: "Roboto Mono";
+    font-size:16px;
+    color:white;
+}
+.resume-link:hover{
+    font-family: "Roboto Mono";
+    font-size:16px;
+    color:#fc9f9f;
+    text-decoration: none;
+}
+.mark-att{
+    color: #ffcece;
+    background-color: #a8a8a8;
+}
 
-  #projects{
-      background-color:white;
-      height: 92vh;
-      display: flex;
-      flex-direction:column;
-      justify-content: center;
-      align-items: center;
-  }
 
+  /* ------------------GRAPHIC DESIGN --------------------------*/
   #graphics{
     background-color:#f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction:column;
+    padding: 75px 40px 75px 40px;
+    }
+  .dsgn-img{
+    max-width:100%;
+    width:350px;
+  }
+  .dsgn-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+  }
+  .graph-cont{
+      border-right:1px solid #a8a8a8;
+  }
+
+    /* ------------------PROJECTS --------------------------*/
+  #projects{
+      background-color:white;
+      height: 100%;
+      margin-top:75px;
+      margin-bottom:75px;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      padding-left:60px;
+  }
+  .project-cont{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  a{
+    font-family: "Roboto Mono";
+    font-size:25px;
+    color:inherit;
+  }
+  .web-link{
+      color:black
+  }
+  a.web-link:hover{
+      color: #fc9f9f;
+  }
+  .proj-explan{
+      size:15px;
+      padding-left:15px;
+  }
+  #mbm-icon,#ff-icon{
+    width:600px;
+    float:right;
+    margin-right:20px;
 }
 
+  /* ------------------CONTACT --------------------------*/
 #contact{
     background-color:white;
     display:flex;
@@ -150,126 +246,7 @@ a{
     height:95vh;
 }
 
-
-li{
-    font-family: "Open Sans";
-    font-size: 24px;
-    line-height:35px;
+.icon{
+    width:50px;
+    margin:10px;
 }
-
-ul{
-    margin: 0px 100px 0px 100px;
-}
-
-.dsgn-img{
-    padding:30px;
-    max-width:100%;
-    width:600px;
-    height:625px;
-}
-
-.col{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-}
-
-.link{
-    background-color: #fc9f9f;
-    text-decoration:none;
-    color:black;
-    padding:2px;
-    font-family: "Open Sans";
-}
-
-.link:hover{
-    background-color:#482f7f00;
-    color:#fc9f9f;
-    text-decoration:none;
-}
-
-.page{
-    text-decoration:none;
-    color:black;
-    font-family: "Roboto Mono";
-    border:none;
-    font-size:24px;
-}
-
-.page:hover{
-    color:#fc9f9f;
-    text-decoration:none;
-}
-
-.row-link{
-    width:100%
-}
-
-/* ABOUT PAGE -------------------------*/
-.program{
-    font-family: "Roboto Mono";
-    font-size:16px;
-    line-height:0px;
-    margin:0px;
-    text-indent:50px;
-    padding-left:10px;
-}
-
-.program-class{
-    font-family: "Roboto Mono";
-    font-size:16px;
-    line-height:0px;
-    margin:0px;
-    color: #4033a0;
-    padding-left:10px;
-}
-
-.about-window{
-    background: #aaaaaa;
-    display:flex;
-    flex-direction:column;
-    width: 700px
-}
-
-.about-title{
-    text-align:center;
-    font-family: "Roboto Mono";
-    background: #d5d5d5;
-    padding: 10px;
-}
-
-.resume-link{
-    font-family: "Roboto Mono";
-    font-size:16px;
-    color:white;
-}
-
-.resume-link:hover{
-    font-family: "Roboto Mono";
-    font-size:16px;
-    color:#fc9f9f;
-    text-decoration: none;
-}
-
-.mark-att{
-    color: #ffcece;
-    background-color:#aaaaaa;
-}
-
-i {
-    border: solid black;
-    border-width: 0 15px 15px 0;
-    display: inline-block;
-    padding: 15px;
-    margin-bottom:15px
-  }
-  
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
-  
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
