@@ -55,20 +55,7 @@ p{
 .contact-text{
     font-size:24px;
 }
-mark{
-    background-color: inherit;
-}
-.mark-title{
-    background-color: #fc9f9f
-}
-li{
-    font-family: "Open Sans";
-    font-size: 24px;
-    line-height:35px;
-}
-ul{
-    margin: 0px 100px 0px 100px;
-}
+
 
 
 /* ------------------NAVBAR --------------------------*/
@@ -141,17 +128,12 @@ ul{
     padding: 10px;
     border-radius:5px 5px 0px 0px;
 }
-.resume-link{
+.resume-link,.resume-link:hover{
     font-family: "Roboto Mono";
-    font-size:16px;
+    font-size:18px;
     color:#fc9f9f;
 }
-.resume-link:hover{
-    font-family: "Roboto Mono";
-    font-size:16px;
-    color:#fc9f9f;
-    text-decoration: none;
-}
+
 .mark-att{
     color: #fc9f9f;
     background-color: #ffffff00;
@@ -165,24 +147,15 @@ ul{
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    padding: 75px 40px 75px 40px;
+    padding: 75px 60px 75px 60px;
     }
   .dsgn-img{
     width:70%;
   }
-  .dsgn-cont{
-    display: flex;
-    align-items: center;
-    flex-direction:column;
-  }
-  .dsgn-cont-text{
-      display: flex;
-      align-items:left;
-      justify-content: center;
-      flex-direction:column;
-  }
   .graph-cont{
-      border-right:1px solid #a8a8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
     /* ------------------PROJECTS --------------------------*/
@@ -202,13 +175,9 @@ ul{
     flex-direction:column;
     justify-content: center;
   }
-  a{
-    font-family: "Open Sans";
-    font-size:25px;
-    color:inherit;
-  }
   .web-link{
-      color:black
+      color:black;
+      font-size:30px;
   }
   a.web-link:hover{
       color: #fc9f9f;
