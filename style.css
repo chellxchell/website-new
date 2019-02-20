@@ -48,6 +48,12 @@ h4{
     font-weight:bold;
     color: #fc9f9f;
 }
+.section-title{
+    font-family: "Roboto";
+    font-size:40px;
+    font-weight:bold;
+    padding:15px 0px 15px 0px;
+}
 p{
     font-family: "Open Sans";
     font-size: inherit;
@@ -118,6 +124,7 @@ p{
     display:flex;
     flex-direction:column;
     width: 700px;
+    height:550px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius:5px;
 }
@@ -150,7 +157,7 @@ p{
     padding: 75px 60px 75px 60px;
     }
   .dsgn-img{
-    width:70%;
+    width:100%;
   }
   .graph-cont{
     display: flex;
@@ -204,11 +211,11 @@ p{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    height:95vh;
+    height:10vh;
     margin:0px 100px 0px 100px;
 }
 
 .icon{
-    width:40px;
+    width:30px;
     margin:10px;
 }

@@ -1,31 +1,22 @@
 body{
     background-color:#f1f1f1 !important;
 }
-
-h1{
-    font-family:inherit;
-    margin-top:inherit;
+button{
+    border:inherit;
+    background-color:inherit;
 }
-
-h2{
-    font-family:inherit;
-    margin-top:inherit;
-}
-
-p{
-    font-family:inherit;
-    font-size:inherit;
-    margin:inherit;
-}
-
-a{
-    color:inherit;
-}
-.link,a.link:hover,a.arrow-link:hover{
+.link,a.link:hover{
     color:#fc9f9f;
 }
-.arrow-link{
-    color:white;
+.arrow-button:hover{
+    background-color:#ffffff00;
+    color:#fc9f9f;
+}
+.arrow-button{
+    background-color:#ffffff00;
+    color:black;
+    font-size:30px;
+    padding:20px 0px 0px 25px;
 }
 
 .title{
@@ -56,11 +47,11 @@ a{
     align-items:center;
 }
 
-button{
+/* button{
     background-color:#fc9f9f;
     color:white;
     padding:10px 15px 10px 15px;
-}
+} */
 
 button:hover{
     background-color:white;
