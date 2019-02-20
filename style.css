@@ -185,14 +185,18 @@ ul{
     padding: 75px 40px 75px 40px;
     }
   .dsgn-img{
-    max-width:100%;
-    width:350px;
+    width:70%;
   }
   .dsgn-cont{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction:column;
+  }
+  .dsgn-cont-text{
+      display: flex;
+      align-items:left;
+      justify-content: center;
+      flex-direction:column;
   }
   .graph-cont{
       border-right:1px solid #a8a8a8;
@@ -231,8 +235,9 @@ ul{
       padding-left:15px;
   }
   #mbm-icon,#ff-icon{
-    width:600px;
-    right:0
+    width:100%;
+    float:right;
+    padding-right:50px;
 }
 .row-link,a.row-link:hover{
     color:black;
