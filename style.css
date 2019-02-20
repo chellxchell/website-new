@@ -1,13 +1,16 @@
 /* ------------------HOME PAGE --------------------------*/
 .intro{
     display:flex;
-    flex-direction:column;
     height:100vh;
     padding-top:75px;
-    padding-left:50px;
     justify-content: center;
-    align-items:center;
     background:url('https://s3.us-east-2.amazonaws.com/chelly-website/website-images/bg.png');
+}
+.intro-cont{
+    width:700px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 #cc-logo{
     width:150px;
@@ -16,48 +19,32 @@
 }
 
 /* ------------------FONT SIZES --------------------------*/
-h1{
-    font-family:inherit;
-    font-size:inherit;
-    line-height:inherit;
-}
 .title-top{
     font-size:120px;
     font-family:"Roboto Mono";
     line-height:130px;
     font-weight:bold;
 }
-h2{
-    font-family: inherit;
-    margin-left:inherit;
-    font-size:inherit;
-    line-height:inherit;
-    color:inherit;
-}
 .sub-title{
     font-family: "Roboto";
-    font-size:40px;
-    line-height:60px;
+    font-size:30px;
+    line-height:40px;
+    margin-left:5px;
 }
 h3{
-    font-family: inherit;
-    font-size:inherit;
     padding-left:inherit;
 }
 .sml-title{
-    font-family: "Roboto Mono";
-    font-size:25px;
-    /* padding-left:60px; */
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size:30px;
 }
 h4{
-    font-family: inherit;
-    font-size:inherit;
     padding-left:inherit;
 }
 .lil-title{
     font-family: "Open Sans";
     font-size:20px;
-    /* padding-left:60px; */
     font-weight:bold;
     color: #fc9f9f;
 }
@@ -112,13 +99,6 @@ ul{
     text-decoration: none;
     color: #fc9f9f
   }
-  i{
-    border: solid black;
-    border-width: 0 15px 15px 0;
-    display: inline-block;
-    padding: 15px;
-    margin-bottom:15px
-  }
 
   /* ------------------ABOUT SECTION --------------------------*/
   #about{
@@ -132,7 +112,7 @@ ul{
   }
   .program{
     font-family: "Roboto Mono";
-    font-size:16px;
+    font-size:18px;
     line-height:0px;
     margin:0px;
     text-indent:50px;
@@ -140,28 +120,31 @@ ul{
 }
 .program-class{
     font-family: "Roboto Mono";
-    font-size:16px;
+    font-size:18px;
     line-height:0px;
     margin:0px;
     color: #4033a0;
     padding-left:10px;
 }
 .about-window{
-    background: #a8a8a8;
+    background:#fdfdfd;
     display:flex;
     flex-direction:column;
-    width: 700px
+    width: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:5px;
 }
 .about-title{
     text-align:center;
     font-family: "Roboto Mono";
     background: #d5d5d5;
     padding: 10px;
+    border-radius:5px 5px 0px 0px;
 }
 .resume-link{
     font-family: "Roboto Mono";
     font-size:16px;
-    color:white;
+    color:#fc9f9f;
 }
 .resume-link:hover{
     font-family: "Roboto Mono";
@@ -170,8 +153,8 @@ ul{
     text-decoration: none;
 }
 .mark-att{
-    color: #ffcece;
-    background-color: #a8a8a8;
+    color: #fc9f9f;
+    background-color: #ffffff00;
 }
 
 
@@ -220,7 +203,7 @@ ul{
     justify-content: center;
   }
   a{
-    font-family: "Roboto Mono";
+    font-family: "Open Sans";
     font-size:25px;
     color:inherit;
   }
@@ -253,6 +236,7 @@ ul{
     justify-content: center;
     align-items: center;
     height:95vh;
+    margin:0px 100px 0px 100px;
 }
 
 .icon{
