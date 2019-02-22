@@ -15,7 +15,7 @@
 #cc-logo{
     width:150px;
     float:right;
-    padding: 10px;
+    padding: 10px 
 }
 
 /* ------------------FONT SIZES --------------------------*/
@@ -159,6 +159,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:40px;
   }
 
     /* ------------------PROJECTS --------------------------*/
@@ -189,11 +190,15 @@ p{
       size:15px;
       padding-left:15px;
   }
-  #mbm-icon,#ff-icon{
+  #ff-icon{
     width:100%;
     float:right;
     padding-right:50px;
 }
+  #fin-fr-icon{
+    width:80%;
+    margin-left:3%
+  }
 .row-link,a.row-link:hover{
     color:black;
     text-decoration:none;
