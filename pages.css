@@ -1,22 +1,10 @@
-body{
-    background-color:#f1f1f1 !important;
-}
+
 button{
     border:inherit;
     background-color:inherit;
 }
 .link,a.link:hover{
     color:#fc9f9f;
-}
-.arrow-button:hover{
-    background-color:#ffffff00;
-    color:#fc9f9f;
-}
-.arrow-button{
-    background-color:#ffffff00;
-    color:black;
-    font-size:30px;
-    padding:20px 0px 0px 25px;
 }
 
 .title{
@@ -28,17 +16,17 @@ button{
 }
 
 .sub-title{
-    font-family: "Roboto Mono";
+    font-family: "Roboto";
     font-weight:bold;
     text-align: left;
     margin-top:80px;
-    margin-left:200px;
+    margin-left:165px;
 }
 
 .description{
     font-family: "Open Sans";
     font-size:20px;
-    margin: 10px 200px 40px 200px;;
+    margin: 10px 165px 40px 165px;
 }
 
 .flex-container{
@@ -62,6 +50,24 @@ button:hover{
     align-items:center;
     justify-content:center;
 }
+.arrow-button:hover{
+    background-color:#ffffff00;
+    color:#fc9f9f;
+}
+.arrow-button{
+    background-color:#ffffff00;
+    color:black;
+    font-size:30px;
+    padding:20px 0px 0px 25px;
+    position:fixed;
+}
+.link-button{
+    font-size:20px;
+    background-color:#fc9f9f;
+    padding:10px 20px;
+    border-radius:5px;
+    color:white;
+}
 
 .screen{
     width:1000px;
@@ -70,12 +76,12 @@ button:hover{
     padding:0px;
 }
 
-.paper-cont,.ff-color-cont,.login-cont{
+.paper-cont,.ff-color-cont,.screen-cont{
     display: flex;
     align-items:center;
     justify-content:center;
 }
-.paper,.ff-logo,.ff-login{
+.paper,.ff-logo,.screen{
     width:75%;
 }
 .ff-letters{
@@ -84,4 +90,40 @@ button:hover{
 .ff-color{
     width:40%;
     padding-top:30px;
+}
+
+
+/* ------------------DAILY UI --------------------*/
+.web-link,.web-link:hover{
+    color: #fc9f9f;
+}
+
+.chall-col{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img{
+    width:40%;
+}
+.ui-img{
+    width:100%;
+}
+
+.lil-title{
+    font-family: "Roboto";
+    text-align: left;
+    font-family: "Open Sans";
+    font-size:20px;
+    margin-left:165px;
+}
+
+hr{
+    width:80%;
+}
+
+/* ------------------GENERATOR--------------------*/
+.gen-img{
+    width:50%;
 }
