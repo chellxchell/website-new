@@ -16,7 +16,7 @@ button{
 }
 
 .sub-title{
-    font-family: "Roboto";
+    font-family: "Open Sans";
     font-weight:bold;
     text-align: left;
     margin-top:80px;
@@ -112,9 +112,8 @@ button:hover{
 }
 
 .lil-title{
-    font-family: "Roboto";
-    text-align: left;
     font-family: "Open Sans";
+    text-align: left;
     font-size:20px;
     margin-left:165px;
 }
