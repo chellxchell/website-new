@@ -1,36 +1,40 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Chelly Compendio</title>
+        <title>Finance Friend</title>
         <link rel="stylesheet" href="pages.css">
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     </head>
 
     <body>
         <a href="index.html"><button class="arrow-button">&larr;</button></a>
-        <div class="flex-container">
-            <div><h1 class="title">Finance Friend</h1></div>
-            <div>
+        <div><img class="page-cover" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/fin-fr/ff-cover.png"></div>
+        <div>
+            <div class="section-div">
+                <h2 class="sub-title">Introduction</h2>
                 <p class="description">
                     Finance Friend is a project for a Human Computer Interaction Class. Finance Friend is a web app
                     intended to help novice traders learn more about key financial concepts.
                     For this project, I worked with three other students to go through the research and design process
                     to create the best possible user experience.
                 </p>
-                <div class="screen-cont"><img class="screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/fin-fr/ff-card.png"></div>
+            </div>
+            <div class="section-div even">
                 <h2 class="sub-title">Interviews and Observations</h2>
                 <p class="description">
                     We knew we wanted our app to be finance-related, so we searched for similar web apps
                     that teach financial concepts. We found a crytocurrency bot online and had non-developer
                     students test it out. The most common feedback was that although the interface was nice
                     and simple, the bot was a one-and-done kind of thing and the users stated they would not
-                    return to the website after looking through it one time. From these observations, we
+                    return to the website after looking through it one time. They also stated that the information
+                    was not presented simply enough, and that they would not recommend it for people who don't have 
+                    any prior knowledge of economics. From these observations, we
                     determined that we needed to create something where the user could keep coming back and growing
                     in their financial knowledge.
                 </p>
+            </div>
+            <div class="section-div">
                 <h2 class="sub-title">Features and Components</h2>
                 <p class="description">
                     After we conducting user observations, we picked our essential features. We wanted our site to be
@@ -38,27 +42,31 @@
                     system where the user would be able to track their learning progress. This would incentivize users
                     to return to the web app instead of just visiting it once.
                 </p>
+            </div>
+            <div class="section-div even">
                 <h2 class="sub-title">"Paper Prototyping"</h2>
                 <p class=description>
                     After we decided our features, I created a "paper" prototype to test on users while the rest of my team
                     members facilitated the user testing. We printed each screen on a separate piece of physical paper and
                     had a user "navigate" the site by clicking through it.
                 </p>
+                <br>
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5 paper-cont">
+                    <div class="col-md-6 paper-cont">
                     <img class="paper" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/fin-fr/paper-1.png">
                     </div>
-                    <div class="col-md-5 paper-cont">
+                    <div class="col-md-6 paper-cont">
                     <img class="paper" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/fin-fr/paper-2.png">
-                    <div class="col-md-1"></div>
                     </div>
                 </div>
+                <br>
                 <p class="description">
                     During testing, we discovered that users prefer to pick their skill level after they have
                     already made an account, rather than at the beginning of creating an account. We also found that
                     the user wanted a general home screen.
                 </p>
+            </div>
+            <div class="section-div">
                 <h2 class="sub-title">Computer Prototype</h2>
                 <p class="description">
                     After testing the paper prototype, we created started to create our computer prototype. I began by designing a
@@ -72,12 +80,19 @@
                     <div class="col-md-5 paper-cont"><img class="ff-letters" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/fin-fr/ff-logo.png"></div>
                 </div>
                 <div class="ff-color-cont"><img class="ff-color" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/fin-fr/fin-fr-colors.png"></div>
+                <br>
                 <p class="description">
                     Once I had the color scheme, I created a "key terms" page which included a flash card and a list view of
-                    basic financial terms.
+                    basic financial terms. The user can either learn with flashcards, or see all of the terms grouped in the list view.
+                    The "key terms" card view is a Bootstrap carousel. This feature is intended to be an introduction to basic financial
+                    terms, so that the user will have some background when they dive deeper into more complicated concepts.
                 </p>
+                <br>
                 <div class="screen-cont"><img class="screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/fin-fr/ff-card.png"></div>
+                <br>
                 <div class="screen-cont"><img class="screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/fin-fr/ff-list.png"></div>
+            </div>
+            <div class="section-div even">
                 <h2 class="sub-title">Moving Forward</h2>
                 <p class="description">
                     As of now, we have implemented the first computer prototype for the project, and are currently working on the remaining features.

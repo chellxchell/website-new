@@ -4,7 +4,7 @@
     height:100vh;
     padding-top:75px;
     justify-content: center;
-    background:url('https://s3.us-east-2.amazonaws.com/chelly-website/website-images/bg.png');
+    /* background:url('https://s3.us-east-2.amazonaws.com/chelly-website/website-images/bg.png'); */
 }
 .intro-cont{
     width:700px;
@@ -73,14 +73,15 @@ p{
     margin-top:-10px;
     z-index:99;
     padding-top:14px;
+    padding-right:25px;
   }
   .topnav a {
-    float: left;
+    float: right;
     color: black;
     text-align: center;
     padding: 14px 16px;
     font-family: "Open Sans";
-    font-size:20px;
+    font-size:18px;
   }
   .topnav a:hover {
     background-color: #482f7f00;
@@ -110,17 +111,20 @@ p{
     margin:0px;
     text-indent:50px;
     padding-left:10px;
+    color:white;
 }
 .program-class{
     font-family: "Roboto Mono";
     font-size:18px;
     line-height:0px;
     margin:0px;
-    color: #4033a0;
+    /* color: #4033a0; */
+    color:#7eb0b8;
     padding-left:10px;
 }
 .about-window{
-    background:#fdfdfd;
+    /* background:#fdfdfd; */
+    background:#404040;
     display:flex;
     flex-direction:column;
     width: 700px;
