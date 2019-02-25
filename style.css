@@ -12,11 +12,6 @@
     flex-direction:column;
     justify-content:center;
 }
-#cc-logo{
-    width:150px;
-    float:right;
-    padding: 10px 
-}
 
 /* ------------------FONT SIZES --------------------------*/
 .title-top{
@@ -51,8 +46,7 @@ h4{
 .section-title{
     font-family: "Source Sans Pro";
     font-size:45px;
-    /* padding:15px 0px 15px 0px; */
-    padding-left:10%;
+    text-align:center;
 }
 p{
     font-family: "Open Sans";
@@ -61,7 +55,6 @@ p{
 .contact-text{
     font-size:24px;
 }
-
 
 
 /* ------------------NAVBAR --------------------------*/
@@ -118,12 +111,10 @@ p{
     font-size:18px;
     line-height:0px;
     margin:0px;
-    /* color: #4033a0; */
     color:#7eb0b8;
     padding-left:10px;
 }
 .about-window{
-    /* background:#fdfdfd; */
     background:#404040;
     display:flex;
     flex-direction:column;
@@ -144,7 +135,6 @@ p{
     font-size:18px;
     color:#fc9f9f;
 }
-
 .mark-att{
     color: #fc9f9f;
     background-color: #ffffff00;
@@ -156,9 +146,6 @@ p{
     background-color:#f1f1f1;
     padding: 75px 60px 75px 60px;
     }
-  .dsgn-img{
-    width:100%;
-  }
   .graph-cont{
     display: flex;
     justify-content: center;
@@ -177,43 +164,14 @@ p{
       height: 100%;
       margin-top:75px;
       margin-bottom:75px;
-      /* display: flex;
-      flex-direction:column;
-      justify-content: center; */
       align-items: center;
-      padding-left:60px;
+      /* padding-left:60px; */
   }
   .project-cont{
     display: flex;
     flex-direction:column;
     justify-content: center;
   }
-  .web-link{
-      color:black;
-      font-size:30px;
-  }
-  a.web-link:hover{
-      color: #fc9f9f;
-  }
-  .proj-explan{
-      size:15px;
-      padding-left:15px;
-  }
-  #ff-icon{
-    width:100%;
-    padding-right:50px;
-}
-
-.row-link,a.row-link:hover{
-    color:black;
-    text-decoration:none;
-    font-size: inherit;
-}
-
-/* #ff-icon:hover, #graph-icon:hover{
-    opacity:0.1;
-    filter:alpha(opacity=30);
-} */
 
 
   /* ------------------CONTACT --------------------------*/
@@ -234,10 +192,8 @@ p{
 
 
 #ff-icon {
-    opacity: 1;
-    display: block;
+    padding:25px;
     width: 100%;
-    height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
   }
@@ -265,10 +221,5 @@ p{
   .text {
     color: black;
     font-size: 45px;
-    margin-right: 50px;
     font-family: "Source Sans Pro";
-  }
-
-  .graph-text{
-    margin-right:0px;
   }
