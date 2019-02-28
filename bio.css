@@ -5,7 +5,10 @@
     /* align-items: center; */
     padding:75px 15% 75px 15%
 }
-.info,.about-descrip{
+.even{
+    background-color: #f1f1f1;
+}
+.info,.about-descrip,.design-proc{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +48,7 @@
   .h1-title{
     font-family: "Source Sans Pro";
     font-size:45px;
-    padding-left:20px;
+    text-align:center;
 }
 .bio-descrip{
     font-family:"Open Sans";
@@ -67,3 +70,28 @@
   .prof-pic{
       width:100%
   }
+
+
+  .program-view{
+    background:#404040;
+    display:flex;
+    flex-direction:column;
+    width: 700px;
+    height:550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:5px;
+  }
+
+  .window-title{
+    text-align:center;
+    font-family: "Roboto Mono";
+    background: #d5d5d5;
+    padding: 10px;
+    border-radius:5px 5px 0px 0px;
+    font-size:20px;
+}
+
+.design-view{
+    background:white;
+    width:800px;
+}
