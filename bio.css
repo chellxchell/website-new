@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    padding:75px 15% 75px 15%
 }
-.even{
-    background-color: #f1f1f1;
+.bio-cont{
+  padding:100px;
+  margin:auto;
+}
+.design-process{
+  padding:50px;
 }
 .info,.about-descrip,.design-proc{
     display: flex;
@@ -29,14 +31,17 @@
     float: right;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 0px;
+    margin: 0px 15px;
     font-family: "Open Sans";
     font-size:18px;
   }
   .topnav a:hover {
     background-color: #482f7f00;
     color: #fc9f9f;
-    text-decoration: none;
+    text-decoration:none;
+    padding-bottom:3px;
+    border-bottom: 3px solid #fc9f9f;
   }
   .topnav a.active {
     background-color: #482f7f00;
@@ -52,7 +57,8 @@
 }
 .bio-descrip{
     font-family:"Open Sans";
-    font-size:18px;
+    font-size:20px;
+    width:100%
 }
 
 .bio-link{
@@ -68,30 +74,42 @@
 
   /* ------------------PICTURE SIZES --------------------------*/
   .prof-pic{
-      width:100%
+      width:100%;
+      padding:20px;
+  }
+
+  .process-icon{
+    /* width:120px;
+    height:150px; */
+    max-width: 110px;
+    height:130px;
+    margin:0px 30px;
+    padding:15px 0px;
   }
 
 
-  .program-view{
-    background:#404040;
-    display:flex;
-    flex-direction:column;
-    width: 700px;
-    height:550px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius:5px;
+/* ------------------DESIGN PROCESS--------------------------*/
+  .process{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    background-color: #f1f1f1;
+    height:375px;
   }
 
-  .window-title{
-    text-align:center;
-    font-family: "Roboto Mono";
-    background: #d5d5d5;
-    padding: 10px;
-    border-radius:5px 5px 0px 0px;
+  .process-title{
+    font-family: "Source Sans Pro";
     font-size:20px;
-}
+    color: #fc9f9f;
+  }
 
-.design-view{
-    background:white;
-    width:800px;
-}
+  .process-text{
+    font-family: "Open Sans";
+  }
+
+
+  .about-info{
+    background-color: #f1f1f1;
+  }
