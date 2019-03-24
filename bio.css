@@ -1,21 +1,19 @@
-.about-cont{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .bio-cont{
   padding:100px;
-  margin:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.design-process{
-  padding:50px;
-}
+
 .info,.about-descrip,.design-proc{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 /* ------------------NAVBAR --------------------------*/
 .topnav {
     background-color: white;
@@ -54,12 +52,14 @@
     font-family: "Source Sans Pro";
     font-size:45px;
     text-align:center;
-}
-.bio-descrip{
+  }
+  .bio-descrip{
     font-family:"Open Sans";
-    font-size:20px;
-    width:100%
-}
+    font-size:22px;
+    background-color: #f1f1f1;
+    padding:75px;
+    width:70%;
+  }
 
 .bio-link{
     color: #fc9f9f;
@@ -74,13 +74,14 @@
 
   /* ------------------PICTURE SIZES --------------------------*/
   .prof-pic{
-      width:100%;
-      padding:20px;
+    width:70%
+  }
+
+  .pic-div{
+    text-align: center;
   }
 
   .process-icon{
-    /* width:120px;
-    height:150px; */
     max-width: 110px;
     height:130px;
     margin:0px 30px;
@@ -89,15 +90,21 @@
 
 
 /* ------------------DESIGN PROCESS--------------------------*/
-  .process{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin:auto;
-    background-color: #f1f1f1;
-    height:375px;
-  }
+.design-process{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom:100px;
+}
+
+.process-col{
+  background: #f1f1f1;
+  margin:10px;
+  padding: 10px;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+}
 
   .process-title{
     font-family: "Source Sans Pro";
@@ -110,6 +117,3 @@
   }
 
 
-  .about-info{
-    background-color: #f1f1f1;
-  }
