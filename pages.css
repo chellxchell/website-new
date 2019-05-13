@@ -151,3 +151,30 @@ button:hover{
     text-decoration: none;
     color: #fc9f9f
   }
+
+  .next-link{
+    color: #fc9f9f;
+    font-size: 25px;
+  }
+
+  .next-link:hover{
+    color: #fc9f9f;
+  }
+
+  .footer{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 50px;
+  }
+
+  .left-link{
+    position: absolute;
+    left: 0px;
+    padding-left: 15%
+  }
+
+  .right-link{
+    position: absolute;
+    right: 0px;
+    padding-right: 15%
+}
