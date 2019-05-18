@@ -2,70 +2,80 @@
 <html>
     <head>
         <title>Chelly Compendio</title>
-        <link rel="stylesheet" href="pages.css">
+        <link rel="stylesheet" href="css/pages.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     </head>
 
     <body>
-            <div class="topnav">
-                    <a target=_blank href="https://s3.us-east-2.amazonaws.com/chelly-website/Design+Resume.pdf">Resum&eacute;</a>
-                    <a href="bio.html">Bio</a>
-                    <a class="active" href="index.html">Projects</a>
-                </div>
-            <div><img class="page-cover" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/mbm-cover.png"></div>
-            <br>
-            <div class="button-div"><a href="http://mainlinebehavioral.com/" target=_blank><button class="link-button">Live Site</button></a></div>
-            <div class="section-div">
-                <h2 class="sub-title">A Private Psychiatry Practice</h2>
-                <p class="description">
-                    Mainline Behavioral Medicine is a project for a private psychiatry practice in Paoli, Pennsylvania. My goal 
-                    was to make the site look professional, but still simple enough that users can find information easily. I started by making preliminary sketches
-                    of the layout for the interface - I wanted the website to be one page, so that all of the information is easily accessible.
-                </p>
-                <div class="paper-cont"><img class="ff-color" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/sketch.png"></div>
+        <!-- NAVIGATION BAR -->
+        <div class="topnav flexRow">
+            <a class="topnav__item" href="index.html">Projects</a>
+            <a class="topnav__item" href="bio.html">Bio</a>
+            <a class="topnav__item" href="https://s3.us-east-2.amazonaws.com/chelly-website/Design+Resume.pdf" target=_blank>Resum&eacute;</a>
+        </div>
+
+        <img class="pageCover" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/mbm-cover.png">
+
+        <div class="flexCenter"><a href="http://mainlinebehavioral.com/" target=_blank><button class="linkButton">Live Site</button></a></div>
+            
+        <div class="section">
+            <h1 class="sub-title">A Private Psychiatry Practice</h1>
+            <p>
+                Mainline Behavioral Medicine is a project for a private psychiatry practice in Paoli, Pennsylvania. My goal 
+                was to make the site look professional, but still simple enough that users can find information easily. I started by making preliminary sketches
+                of the layout for the interface - I wanted the website to be one page, so that all of the information is easily accessible.
+            </p>
+            <div class="figure flexCenter">
+                <img class="figure__item" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/sketch.png">
             </div>
-            <div class="section-div even">
-                <h2 class="sub-title">Recognizable Branding</h2>
-                <p class="description">
-                    <strong>Logo</strong><br>
-                    After deciding on a layout, I did some trial and error in Illustrator to create a logo. I finally decided on a lettermark logo in a 
-                    dark blue color that appears white on the website for visibility. I wanted the logo to be simple but recognizable.
-                </p>
-                <div class="screen-cont"><img class="ff-letters" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/mbm.png"></div>
-                <div class="screen-cont"><img class="ff-letters" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/mbm-full.png"></div>
-                <p class="description">
-                    <strong>Colors</strong><br>
-                    After deciding on a logo, I built the color scheme around the color I created the logo in. I wanted to color scheme to be professional,
-                    but still visually appealing. I added in lighter colors for highlighting items on the website.
-                    <div class="ff-color-cont"><img class="ff-color" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/mbm-colors-white.png"></div>
-                </p>
+        </div>
+
+        <div class="section section--gray">
+            <h1>Recognizable Branding</h1>
+            <h2>Logo</h2>
+            <p>
+                After deciding on a layout, I did some trial and error in Illustrator to create a logo. I finally decided on a lettermark logo in a 
+                dark blue color that appears white on the website for visibility. I wanted the logo to be simple but recognizable.
+            </p>
+            <div class="figure figure--column">
+                <img class="figure__item" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/mbm.png">
+                <img class="figure__item" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/mbm-full.png">
             </div>
-            <div class="section-div">
-                <h2 class="sub-title">Digital Prototype</h2>
-                <p class="description">
-                    Once I had a layout and a color scheme, I started building the site. I added a navigation bar that went to different sections of the one page 
-                    website.
-                </p>
-                <div class="screen-cont"><img class="screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/initial.png"></div><br>
-                <div class="screen-cont"><img class="screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/services.png"></div><br>
-                <div class="screen-cont"><img class="screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/fees.png"></div><br>
-                <div class="screen-cont"><img class="screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/contact.png"></div>
+            <h2>Colors</h2>
+            <p>
+                After deciding on a logo, I built the color scheme around the color I created the logo in. I wanted to color scheme to be professional,
+                but still visually appealing. I added in lighter colors for highlighting items on the website.
+            </p>
+            <div class="figure">
+                <img class="figure__item" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/mbm-colors-white.png">
             </div>
-            <div class="section-div even">
-                <h2 class="sub-title">Moving Forward</h2>
-                <p class="description">
-                    I plan to also add a section in the website for patients to view necessary forms as pdfs. I am also waiting on the client to provide pictures
-                    for both of the physicians and a biography for one of them.
-                </p>
+        </div>
+
+        <div class="section">
+            <h1>Digital Prototype</h1>
+            <p>
+                Once I had a layout and a color scheme, I started building the site. I added a navigation bar that went to different sections of the one page 
+                website.
+            </p>
+            <div class="figure figure--column">
+                <img class="figure__item--screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/initial.png">
+                <img class="figure__item--screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/services.png">
+                <img class="figure__item--screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/fees.png">
+                <img class="figure__item--screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/mbm/screenshots/contact.png">
             </div>
-            <div class="section-div footer">
-                <div><a class="next-link left-link" href="finance-friend.html">&larr; Finance Friend</a></div>
-                <div><a class="next-link right-link" href="daily-ui.html">Daily UI &rarr;</a></div>
-            </div>
+        </div>
+
+        <div class="section section--gray">
+            <h1>Moving Forward</h1>
+            <p>
+                I plan to also add a section in the website for patients to view necessary forms as pdfs. I am also waiting on the client to provide pictures
+                for both of the physicians and a biography for one of them.
+            </p>
+        </div>
+        <div class="bottomnav">
+            <a class="bottomnav__link link" href="finance-friend.html">&larr; Finance Friend</a>
+            <a class="bottomnav__link link" href="daily-ui.html">Daily UI &rarr;</a>
+        </div>
     </body>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
 </html>
-
-<div class="screen-cont"><img class="screen" src=""></div>

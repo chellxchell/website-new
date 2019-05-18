@@ -1,11 +1,7 @@
 
-.bio-cont{
-  padding:100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
+
+
 
 .info,.about-descrip,.design-proc{
     display: flex;
@@ -14,38 +10,6 @@
     align-items: center;
 }
 
-/* ------------------NAVBAR --------------------------*/
-.topnav {
-    background-color: white;
-    overflow: hidden;
-    position:fixed;
-    width:100%;
-    margin-top:-10px;
-    z-index:99;
-    padding-top:14px;
-    padding-right:25px;
-  }
-  .topnav a {
-    float: right;
-    color: black;
-    text-align: center;
-    padding: 14px 0px;
-    margin: 0px 15px;
-    font-family: "Open Sans";
-    font-size:18px;
-  }
-  .topnav a:hover {
-    background-color: #482f7f00;
-    color: #fc9f9f;
-    text-decoration:none;
-    padding-bottom:3px;
-    border-bottom: 3px solid #fc9f9f;
-  }
-  .topnav a.active {
-    background-color: #482f7f00;
-    text-decoration: none;
-    color: #fc9f9f
-  }
 
   /* ------------------TEXT SIZES --------------------------*/
   .h1-title{

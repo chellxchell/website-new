@@ -1,0 +1,68 @@
+a{
+  text-decoration: none;
+}
+body{
+  font-family: "Open Sans";
+}
+
+.flexRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  /* ------------------ABOUT SECTION --------------------------*/
+.about{
+  margin:0px 15%;
+}
+.about__title{
+  font-family: "Source Sans Pro";
+  font-size:45px;
+  text-align:center;
+  margin-top:50px;
+}
+.about__pic{
+  width:80%;
+}
+
+.aboutInfo{
+  width:80%;
+  font-size:22px;
+  background-color: #f1f1f1;
+}
+.aboutInfo__text{
+  padding:20px 75px;
+}
+
+/* ------------------DESIGN PROCESS--------------------------*/
+.process{
+	justify-content: space-between
+}
+.processItem{
+  background: #f1f1f1;
+  height:400px;
+  width: 20%;
+  margin:15px;
+  padding: 10px;
+}
+
+.processItem__icon{
+    width:50%;
+    top:0;
+}
+
+.processItem__title{
+    font-family: "Source Sans Pro";
+    font-size:25px;
+    color: #fc9f9f;
+}
+.processItem__text{
+	font-size:18px;
+}
+

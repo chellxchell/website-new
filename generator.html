@@ -2,49 +2,58 @@
 <html>
     <head>
         <title>Chelly Compendio</title>
-        <link rel="stylesheet" href="pages.css">
+        <link rel="stylesheet" href="css/pages.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     </head>
 
     <body>
-            <div class="topnav">
-                    <a target=_blank href="https://s3.us-east-2.amazonaws.com/chelly-website/Design+Resume.pdf">Resum&eacute;</a>
-                    <a href="bio.html">Bio</a>
-                    <a class="active" href="index.html">Projects</a>
-                </div>        
-            <div class="section-div">
-            <h1 class="title">Graphic Design Generator</h1>
-            <br>
-            <p class="description">
-                In my free time, I go on <a class="web-link" target=_blank href="https://sharpen.design/">Sharpen Design Generator</a> and use one of the 
+        <!-- NAVIGATION BAR -->
+        <div class="topnav flexRow">
+            <a class="topnav__item" href="index.html">Projects</a>
+            <a class="topnav__item" href="bio.html">Bio</a>
+            <a class="topnav__item" href="https://s3.us-east-2.amazonaws.com/chelly-website/Design+Resume.pdf" target=_blank>Resum&eacute;</a>
+        </div>
+
+        <div class="section">
+            <h1>Graphic Design Generator</h1>
+            <p>
+                In my free time, I go on <a class="link" target=_blank href="https://sharpen.design/">Sharpen Design Generator</a> and use one of the 
                 prompts to create something. I use Adobe Illustrator, Sketch, and Adobe Photoshop.
             </p>
         </div>
-        <div class="section-div even">
-            <h2 class="sub-title">Boba Vendor</h2>
-            <h3 class="lil-title">Create a purchasing flow for your favorite boba vendor.</h3>
-            <img class="gen-img" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/all-kft.png">
-        </div>
-        <div class="section-div">
-            <h2 class="sub-title">Nike Loading</h2>
-            <h3 class="lil-title">Create a loading screen for Nike.</h3>
-            <img class="gen-img" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/nike-loading-screen.png">
-        </div>
-        <div class="section-div even">
-            <h2 class="sub-title">NASA Emojis</h2>
-            <h3 class="lil-title">Create 3 custom emojis for NASA.</h3>
-            <div class="center-pics">
-                <img class="gen-small-img" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/gd-challenge-1-white.png">
-                <br>
-                <img class="gen-small-img" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/screen.PNG">
+
+        <div class="section section--gray">
+            <h2>Boba Vendor</h2>
+            <h3>Create a purchasing flow for your favorite boba vendor.</h3>
+            <div class="figure">
+                <img class="figure__item--screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/all-kft.png">
             </div>
-        </div>   
-        <div class="section-div footer">
-            <div><a class="next-link left-link" href="daily-ui.html">&larr; Daily UI</a></div>
-            <div><a class="next-link right-link" href="finance-friend.html">Finance Friend &rarr;</a></div>
-        </div>            
+        </div>
+
+        <div class="section">
+            <h2>Nike Loading</h2>
+            <h3>Create a loading screen for Nike.</h3>
+            <div class="figure">
+                <img class="figure__item--screen" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/nike-loading-screen.png">
+            </div>
+        </div>
+
+        <div class="section section--gray">
+            <h2>NASA Emojis</h2>
+            <h3>Create 3 custom emojis for NASA.</h3>
+            <div class="figure figure--column">
+                <img class="figure__item" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/gd-challenge-1-white.png">
+                <br>
+                <img class="figure__item" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/screen.PNG">
+            </div>
+        </div> 
+
+        <div class="bottomnav">
+            <a class="bottomnav__link link" href="daily-ui.html">&larr; Daily UI</a>
+            <a class="bottomnav__link link" href="finance-friend.html">Finance Friend &rarr;</a>
+        </div>    
+
     </body>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 </html>

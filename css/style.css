@@ -4,51 +4,31 @@ html{
 a {
 	text-decoration: none;
 }
-h1,h2,h3{
+h1, h2, h3{
 	margin: 0;
 }
 
 /* ------------------UTILITY CLASSES -----------------------*/
+/* flex format */
 .flexRow,.flexColumn{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .flexColumn{
-	flex-direction:column;
+	flex-direction: column;
 }
 
 .sectionTitle{
     font-family: "Source Sans Pro";
     font-size:45px;
-    text-align:center\
+    text-align:center;
 }
 .colorPink{
 	color: #fc9f9f !important;
 }
 .fullWidth{
 	width:100%;
-}
-
-
-/* ------------------NAVBAR --------------------------*/
-.topnav{
-	position: fixed;
-	justify-content: flex-end;
-	height: 60px;
-	width: 100%;
-	z-index: 99;
-	background-color: white;
-	font-size: 18px;
-	margin-top:-10px;
-}
-.topnav__item {
-    color: black;
-    margin: 0px 40px 0px 0px;
-}
-.topnav__item:hover {
-    color: #fc9f9f;
-    border-bottom: 3px solid #fc9f9f;
 }
 
 /* ------------------HEADER --------------------------*/
