@@ -10,132 +10,105 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     </head>
 
     <body>
         <!-- NAVIGATION BAR -->
-        <div class="topnav">
-            <a target=_blank href="https://s3.us-east-2.amazonaws.com/chelly-website/Design+Resume.pdf">Resum&eacute;</a>
-            <a href="bio.html">Bio</a>
-            <a class="active" href="#home">Projects</a>
+        <div class="topnav flexRow">
+            <a class="topnav__item colorPink" href="#home">Projects</a>
+            <a class="topnav__item" href="bio.html">Bio</a>
+            <a class="topnav__item" target=_blank href="https://s3.us-east-2.amazonaws.com/chelly-website/Design+Resume.pdf">Resum&eacute;</a>
         </div>
 
         <!-- HOME PAGE -->
-        <div class="intro">
-                <h1 class="title-top">Hi, I'm <a class="title-link" href="bio.html">Chelly.</a></h1>
-                <h2 class="sub-title">I'm a
-                    <span class="txt-rotate" data-period="2000"
-                    data-rotate='[ "front-end developer.", "visual designer.", "UX engineer."]'></span>
-                </h2>   
+        <div class="header flexColumn">
+            <h1 class="header__title">Hi, I'm <a class="colorPink" href="bio.html">Chelly.</a></h1>
+            <h2 class="header__subtitle">I'm a
+                <span class="txt-rotate" data-period="2000" 
+                data-rotate='[ "front-end developer.", "visual designer.", "UX engineer."]'></span>
+            </h2>   
         </div>
 
         <!-- ABOUT -->
-        <section id="about">
-            <div class="about-window">
-                <h5 class="about-title">about-me.css</h5><br>
-                <p class="program-class">.chelly-education{</p><br>
-                    <p class="program"><mark class="mark-att">year:</mark> Sophomore;</p><br>
-                    <p class="program"><mark class="mark-att">school:</mark> Northwestern University;</p><br>
-                    <p class="program"><mark class="mark-att">major:</mark> Computer Science;</p><br>
-                    <p class="program"><mark class="mark-att">certificates:</mark> Design and Marketing;</p><br>
-                <p class="program-class">}</p><br>
-                    
-                <p class="program-class">.chelly-tools{</p><br>                    
-                    <p class="program"><mark class="mark-att">front-end:</mark> Javascript, HTML/CSS, React.JS;</p><br>
-                    <p class="program"><mark class="mark-att">object-oriented:</mark> Python, Java, C++;</p><br>
-                    <p class="program"><mark class="mark-att">design:</mark> Adobe Suite, Bootstrap;</p><br>
-                <p class="program-class">}</p><br>
-
-                <p class="program-class">.chelly-interests{</p><br>
-                    <p class="program"><mark class="mark-att">programming:</mark> front-end app & web development;</p><br>
-                    <p class="program"><mark class="mark-att">design:</mark> UI/UX, branding/logos, illustration, typography;</p><br>
-                    <p class="program"><mark class="mark-att">hobbies:</mark> dancing, music, Marvel movies;</p><br>
-                <p class="program-class">}</p><br>
-
-                <p class="program-class">.chelly-resum&eacute;</p><br>
-                    <p class="program"><mark class="mark-att">download:</mark> url('<a href="https://s3.us-east-2.amazonaws.com/chelly-website/Design+Resume.pdf" class="resume-link" target="_blank">resum&eacute;</a>.pdf')</p><br>   
-                <p class="program-class">}</p><br>
+        <div class="about flexColumn">
+            <h3 class="about__title">about-me.css</h3>
+            <div class="aboutWindow flexColumn">
+                <div class="aboutText">
+                    <p class="aboutText--class">.chelly-education{</p>
+                        <p class="aboutText--value"><span class="aboutText--value colorPink">year:</span> Sophomore;</p>
+                        <p class="aboutText--value"><span class="aboutText--value colorPink">school:</span> Northwestern;</p>
+                    <p class="aboutText--class">}</p>
+                    <p class="aboutText--class">.chelly-tools{</p>
+                        <p class="aboutText--value"><span class="aboutText--value colorPink">front-end:</span> Javascript, HTML/CSS, React.JS;</p>
+                        <p class="aboutText--value"><span class="aboutText--value colorPink">object-oriented:</span> Python, Java, C++;</p>
+                        <p class="aboutText--value"><span class="aboutText--value colorPink">design:</span> Adobe Suite, Bootstrap, Sketch;</p>
+                    <p class="aboutText--class">}</p>
+                    <p class="aboutText--class">.chelly-interests{</p>
+                        <p class="aboutText--value"><span class="aboutText--value colorPink">programming:</span> front-end app & web development;</p>
+                        <p class="aboutText--value"><span class="aboutText--value colorPink">design:</span> UI/UX, branding/logos, illustration, typography;</p>
+                        <p class="aboutText--value"><span class="aboutText--value colorPink">hobbies:</span> dancing, music, Marvel movies;</p>
+                    <p class="aboutText--class">}</p>
+                    <p class="aboutText--class">.chelly-resum&eacute;{</p>
+                        <p class="aboutText--value"><span class="aboutText--value colorPink">download:</span> url('<a href="https://s3.us-east-2.amazonaws.com/chelly-website/Design+Resume.pdf" class="colorPink aboutText--resume" target="_blank">resum&eacute;</a>.pdf')</p>
+                    <p class="aboutText--class">}</p>
+                </div>
             </div>
-        </section>
+        </div>
 
         <!-- PROJECTS -->
-        <section id="projects">
-            <h5 class="section-title">Projects</h5>
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-md-5 graph-cont">
-                        <a href="finance-friend.html">
-                            <img id="ff-icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/thumbnails/ff-laptop.png">
-                            <div class="middle">
-                                <div class="text">Finance Friend</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-5 graph-cont">
-                        <a href="mbm.html">
-                            <img id="ff-icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/thumbnails/mbm-laptop.png">
-                            <div class="middle">
-                                <div class="text">Mainline Behavioral Medicine</div>
-                            </div>
-                        </a>
-                    </div>
+        <div class="projects flexColumn fullWidth">
+            <h3 class="sectionTitle">Projects</h3>
+            <div class="projectsRow flexRow">   
+                <div class="projectsRow__item flexRow">
+                    <a href="finance-friend.html">  
+                        <div class="projectTitle fullWidth flexRow">Finance Friend</div>
+                        <img class="fullWidth" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/thumbnails/ff-laptop.png">
+                    </a>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-5 graph-cont">
-                        <a href="daily-ui.html">
-                            <img id="ff-icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/thumbnails/all-payment.png">
-                            <div class="middle">
-                                <div class="text">Daily UI</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-5 graph-cont">
-                        <a href="https://chellxchell.github.io/kaibigan/">
-                            <img id="ff-icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/thumbnails/kbgn-laptop.png">
-                            <div class="middle">
-                                <div class="text">Kaibigan</div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="projectsRow__item flexRow">
+                    <a href="mbm.html">
+                        <div class="projectTitle fullWidth flexRow">Mainline Behavioral Medicine</div>
+                        <img class="fullWidth" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/thumbnails/mbm-laptop.png">
+                    </a>
                 </div>
             </div>
-        </section>
+            <div class="projectsRow flexRow">
+                <div class="projectsRow__item flexRow">
+                    <a href="daily-ui.html">
+                        <div class="projectTitle fullWidth flexRow">Daily UI</div>
+                        <img class="fullWidth"src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/thumbnails/all-payment.png">
+                    </a>
+                </div>
+                <div class="projectsRow__item flexRow">
+                    <div class="projectTitle fullWidth flexRow">Kaibigan</div>
+                    <img class="fullWidth" src="https://s3.us-east-2.amazonaws.com/chelly-website/website-images/thumbnails/kbgn-laptop.png">
+                </div>
+            </div>
+        </div>
         
         <!-- GRAPHICS -->
-        <section id="graphics">
-            <h5 class="section-title">Graphic Design</h5>
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-md-5 graph-cont">
-                        <a href="#">
-                            <img id="ff-icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/day1.png">
-                            <div class="middle">
-                                <div class="text graph-text">Daily Design</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-5 graph-cont">
-                        <a href="generator.html">
-                            <img id="ff-icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/kft.png">
-                            <div class="middle">
-                                <div class="text graph-text">Graphic Design Generator</div>
-                            </div>
-                        </a>
-                    </div>
+        <div class="graphics flexColumn">
+            <h3 class="sectionTitle">Graphic Design</h3>
+            <div class="projectsRow flexRow">   
+                <div class="projectsRow__item flexRow">
+                    <div class="projectTitle flexRow fullWidth">Daily Design</div>
+                    <img class="fullWidth" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/day1.png">
+                </div>
+                <div class="projectsRow__item flexRow">
+                    <a href="mbm.html">
+                        <div class="projectTitle flexRow fullWidth">Graphic Design Generator</div>
+                        <img class="fullWidth" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/kft.png">
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- CONTACT -->
-        <section id="contact">
-            <div class="icon-cont">
-                <a href="https://github.com/chellxchell" target=_blank><img class="icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/git.png"></a>
-                <a href="https://linkedin.com/in/chellxchell" target=_blank><img class="icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/link.png"></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chelly@u.northwestern.edu" target=_blank><img class="icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/mail.png"></a>
-            </div>
-        </section>
+        <div class="contact flexRow">
+            <a href="https://github.com/chellxchell" target=_blank><img class="contact__icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/git.png"></a>
+            <a href="https://linkedin.com/in/chellxchell" target=_blank><img class="contact__icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/link.png"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chelly@u.northwestern.edu" target=_blank><img class="contact__icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/mail.png"></a>
+        </div>
     </body>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="type.js"></script>
 </html>
