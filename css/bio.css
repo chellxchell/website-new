@@ -53,6 +53,7 @@ body{
 }
 
 .processItem__icon{
+    padding-top: 10%;
     width:50%;
     top:0;
 }
@@ -65,4 +66,3 @@ body{
 .processItem__text{
 	font-size:18px;
 }
-

@@ -1,11 +1,11 @@
 html{
-	font-family: "Open Sans";
+	font-family: "Open Sans";	
 }
-a {
-	text-decoration: none;
+a{
+	text-decoration: none;	
 }
-h1, h2, h3{
-	margin: 0;
+h1, h2, h3, p{
+	margin: 0;	
 }
 
 /* ------------------UTILITY CLASSES -----------------------*/
@@ -52,7 +52,6 @@ h1, h2, h3{
     height: 95vh;
 	font-family: "Roboto Mono";
 }
-
 .about__title{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	width: 700px;
@@ -63,27 +62,24 @@ h1, h2, h3{
     border-radius:5px 5px 0px 0px;
 }
 
-.aboutWindow{
-	justify-content: center;
-    background:#404040;
+.cssCode{
+	background:#404040;
+	align-items: flex-start;
     width: 700px;
     height: 475px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius:0px 0px 5px 5px;
 	font-size:18px;
-	line-height:2px;
 	color: white;
 }
-
-.aboutText--class{
+.cssCode__class{
+	text-indent: 10px;
 	color: #7eb0b8;
-	padding:0px 10px;
 }
-.aboutText--value{
+.cssCode__value{
 	text-indent: 50px;
-	line-height:10px;
 }
-.aboutText--resume:hover{
+.cssCode__resume:hover{
 	text-decoration: underline;
 }
 
