@@ -17,6 +17,10 @@ body{
   align-items: center;
 }
 
+.colorPink{
+  color: #fc9f9f !important;
+}
+
   /* ------------------ABOUT SECTION --------------------------*/
 .about{
   margin:0px 15%;
@@ -42,10 +46,12 @@ body{
 
 /* ------------------DESIGN PROCESS--------------------------*/
 .process{
-	justify-content: space-between
+  justify-content: space-between;
+  overflow: scroll;
 }
 .processItem{
   background: #f1f1f1;
+  justify-content: flex-start;
   height:400px;
   width: 20%;
   margin:15px;
@@ -54,8 +60,8 @@ body{
 
 .processItem__icon{
     padding-top: 10%;
-    width:50%;
-    top:0;
+    height:150px;
+    /* top:0; */
 }
 
 .processItem__title{
@@ -64,5 +70,6 @@ body{
     color: #fc9f9f;
 }
 .processItem__text{
-	font-size:18px;
+  margin-left:10px;
+  font-size:18px;
 }
