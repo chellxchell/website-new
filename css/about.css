@@ -1,26 +1,3 @@
-a{
-  text-decoration: none;
-}
-body{
-  font-family: "Open Sans";
-}
-
-.flexRow{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.flexColumn{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.colorPink{
-  color: #fc9f9f !important;
-}
-
   /* ------------------ABOUT SECTION --------------------------*/
 .about{
   margin:0px 15%;

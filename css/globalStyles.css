@@ -1,0 +1,53 @@
+html{
+	font-family: "Open Sans";	
+}
+a{
+	text-decoration: none;	
+}
+h1, h2, h3, p{
+	margin: 0;	
+}
+
+/* UTILITIES */
+.flexRow, .flexColumn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flexColumn{
+	flex-direction: column;
+}
+
+.sectionTitle{
+    font-family: "Source Sans Pro";
+    font-size:45px;
+    text-align:center;
+}
+
+.colorPink{
+	color: #fc9f9f !important;
+}
+
+.fullWidth{
+	width:100%;
+}
+
+/* NAVBAR */
+.topnav{
+	justify-content: flex-end;
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	font-size: 18px;
+	margin-top: -10px;
+	z-index: 99;
+	background-color: white;
+}
+.topnav__item {
+	margin: 0px 40px 0px 0px;
+	color: black;
+}
+.topnav__item:hover {
+    color: #fc9f9f;
+    border-bottom: 3px solid #fc9f9f;
+}

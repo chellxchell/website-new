@@ -1,35 +1,4 @@
-html{
-	font-family: "Open Sans";	
-}
-a{
-	text-decoration: none;	
-}
-h1, h2, h3, p{
-	margin: 0;	
-}
 
-/* ------------------UTILITY CLASSES -----------------------*/
-/* flex format */
-.flexRow,.flexColumn{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.flexColumn{
-	flex-direction: column;
-}
-
-.sectionTitle{
-    font-family: "Source Sans Pro";
-    font-size:45px;
-    text-align:center;
-}
-.colorPink{
-	color: #fc9f9f !important;
-}
-.fullWidth{
-	width:100%;
-}
 
 /* ------------------HEADER --------------------------*/
 .header{
@@ -45,10 +14,9 @@ h1, h2, h3, p{
     text-align:center;
 }
 
-
 /* ------------------ABOUT SECTION --------------------------*/
 .about{
-    background-color:#f1f1f1;
+    background-color: #f1f1f1;
     height: 95vh;
 	font-family: "Roboto Mono";
 }
@@ -56,15 +24,16 @@ h1, h2, h3, p{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	width: 700px;
 	font-weight: lighter;
-    text-align:center;
-	background: #d5d5d5;
+    text-align:center; 
 	padding:10px 0px;
-    border-radius:5px 5px 0px 0px;
+	border-radius:5px 5px 0px 0px;
+	background: #d5d5d5;
 }
 
 .cssCode{
 	background:#404040;
-	align-items: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start !important;
     width: 700px;
     height: 475px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -84,7 +53,7 @@ h1, h2, h3, p{
 }
 
 /* ------------------PROJECTS --------------------------*/
-.projects{
+.projects,.graphics{
 	padding: 75px 0px;
 }
 
@@ -119,7 +88,6 @@ h1, h2, h3, p{
 /* ------------------GRAPHIC DESIGN --------------------------*/
 .graphics{
     background-color:#f1f1f1;
-	padding: 75px 0px;
 }
 
 /* ------------------CONTACT --------------------------*/
