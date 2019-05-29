@@ -1,21 +1,17 @@
-html{       font-family: "Open Sans";       }
-body{       font-size:20px;                 }
-h3{         font-weight:lighter;            }
-a{          text-decoration: none;          }
+body{
+    font-size:20px;
+}
+h3{
+    font-weight:lighter;       
+}
 
 /* BUTTON STYLING */
 button{
-    border:none;
+    border: none;
 }
 button:hover{
     background-color:white;
     color:#fc9f9f;
-}
-
-.flexCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* ---------------- COVER --------------------*/
@@ -27,9 +23,6 @@ button:hover{
 /* ---------------- SECTIONS --------------------*/
 .section{
     padding:50px 15% 50px 15%;
-}
-.section--gray{
-    background: #f1f1f1;
 }
 
 /* ---------------- FIGURES --------------------*/

@@ -51,3 +51,7 @@ h1, h2, h3, p{
     color: #fc9f9f;
     border-bottom: 3px solid #fc9f9f;
 }
+
+div.section:nth-child(2n+1){
+	background: #f1f1f1;
+}

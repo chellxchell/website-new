@@ -1,85 +1,98 @@
 /* ------------------HEADER --------------------------*/
-.header {
-  height: 100vh; }
-  .header__title {
-    font-family: "Source Sans Pro";
-    font-size: 75px; }
-  .header__subtitle {
-    font-weight: lighter;
-    font-size: 30px;
-    text-align: center; }
+.header{
+  height: 100vh;
+}
+.header__title{
+  font-family: "Source Sans Pro";
+  font-size: 75px; 
+}
+.header__subtitle{
+  font-weight: lighter;
+  font-size: 30px;
+  text-align: center; 
+}
 
 /* ------------------ABOUT SECTION --------------------------*/
-.about {
-  background-color: #f1f1f1;
+.about{
   height: 95vh;
-  font-family: "Roboto Mono"; }
-  .about__title {
-    width: 700px;
-    font-weight: lighter;
-    text-align: center;
-    padding: 10px 0px;
-    border-radius: 5px 5px 0px 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: #d5d5d5; }
+  font-family: "Roboto Mono"; 
+}
 
-.cssCode {
-  background: #404040;
-  justify-content: flex-start;
-  align-items: flex-start !important;
-  width: 700px;
-  height: 475px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 0px 0px 5px 5px;
-  font-size: 18px;
-  color: white; }
-  .cssCode__class {
-    text-indent: 10px;
-    color: #7eb0b8; }
-  .cssCode__value {
-    text-indent: 50px; }
-  .cssCode__resume:hover {
-    text-decoration: underline; }
+.about__title{
+	width: 700px;
+	font-weight: lighter;
+	text-align: center;
+	padding: 10px 0px;
+	border-radius: 5px 5px 0px 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: #d5d5d5; 
+}
+
+.cssCode{
+	justify-content: flex-start;
+	align-items: flex-start !important;
+	height: 475px;
+	width: 700px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 0px 0px 5px 5px;
+	font-size: 18px;
+	color: white; 
+	background: #404040;
+}
+.cssCode__class{
+	text-indent: 10px;
+	color: #7eb0b8; 
+}
+.cssCode__value{
+	text-indent: 50px; 
+}
+.cssCode__resume:hover{
+	text-decoration: underline; 
+}
 
 /* ------------------PROJECTS --------------------------*/
-.projects, .graphics {
-  padding: 75px 0px; }
+.projects{
+  padding: 75px 0px; 
+}
 
-.projectsRow {
-  width: 80%; }
-  .projectsRow__item {
-    margin: 40px;
-    position: relative; }
-  .projectsRow__item:hover .projectTitle {
-    visibility: visible;
-    opacity: 1; }
+.projectsRow{
+  	width: 80%; 
+}
+.projectsRow__item{
+	margin: 40px;
+	position: relative; 
+}
+.projectsRow__item:hover .projectTitle {
+	visibility: visible;
+	opacity: 1; 
+}
 
 .projectTitle {
-  font-weight: bold;
-  font-size: 3vw;
-  text-align: center;
-  font-family: "Source Sans Pro";
-  height: 100%;
-  position: absolute;
-  color: black;
-  background: rgba(255, 255, 255, 0.7);
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s; }
-
-/* ------------------GRAPHIC DESIGN --------------------------*/
-.graphics {
-  background-color: #f1f1f1; }
+	font-weight: bold;
+	font-size: 3vw;
+	text-align: center;
+	font-family: "Source Sans Pro";
+	height: 100%;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .2s, visibility .2s; 
+	color: black;
+	background: rgba(255, 255, 255, 0.7);
+}
 
 /* ------------------CONTACT --------------------------*/
 .contact {
-  height: 8vh; }
-  .contact__icon {
-    width: 30px;
-    margin: 0px 10px; }
+  	height: 8vh; 
+}
+.contact__icon {
+	width: 30px;
+	margin: 0px 10px; 
+}
 
 @media screen and (max-width: 600px) {
-  .projectsRow {
-    flex-direction: column; } }
+  	.projectsRow {
+	 flex-direction: column; 
+	} 
+}
 
-/*# sourceMappingURL=style.css.map */
