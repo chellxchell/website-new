@@ -32,6 +32,15 @@ h1, h2, h3, p{
 	width:100%;
 }
 
+/* BUTTON STYLING */
+button{
+    border: none;
+}
+button:hover{
+    background-color:white;
+    color:#fc9f9f;
+}
+
 /* NAVBAR */
 .topnav{
 	justify-content: flex-end;
