@@ -1,36 +1,36 @@
  /* ------------------ABOUT SECTION --------------------------*/
  .about{
-    margin:0px 15%;
+    /* margin:0px 15%; */
+    width: 50%;
   }
   .about__title{
     font-family: "Source Sans Pro";
     font-size:45px;
     text-align:center;
-    margin-top:50px;
+    padding-top:75px;
   }
   .about__pic{
-    width:80%;
+    width:100%;
   }
   
   .aboutInfo{
-    width:80%;
-    font-size:22px;
+    width:100%;
+    font-size:18px;
     background-color: #f1f1f1;
   }
   .aboutInfo__text{
-    padding:20px 75px;
+    margin:20px 50px;
   }
   
   /* ------------------DESIGN PROCESS--------------------------*/
   .process{
-    justify-content: space-between;
-    overflow: scroll;
+    justify-content: space-around !important;
   }
   .processItem{
     background: #f1f1f1;
-    justify-content: flex-start;
-    height:400px;
-    width: 20%;
+    justify-content: flex-start !important;
+    height:220px;
+    width: 15%;
     margin:10px;
     /* padding: 10px; */
   }
@@ -38,7 +38,7 @@
   .processItem__icon{
       padding-top: 10%;
       height:150px;
-      /* top:0; */
+      width: 150px;
   }
   
   .processItem__title{
@@ -48,15 +48,19 @@
   }
   .processItem__text{
     margin-left:10px;
-    font-size:18px;
+    font-size:15px;
   }
   
   @media screen and (max-width: 700px){
-      .process{
+    .process{
           flex-direction: column;
     }
     .processItem{
-      width: 90%;
+      width: 50%;
+      justify-content: center !important;
+    }
+    .processItem__icon{
+      padding:0;
     }
     .aboutInfo,.about__pic{
       width: 100%;
