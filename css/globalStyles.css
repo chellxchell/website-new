@@ -70,6 +70,7 @@ div.section:nth-child(2n+1){
 }
 
 
+/* DROPDOWN MENU */
 .dropdown {
 	position: relative;
 	display: inline-block;
@@ -81,12 +82,11 @@ div.section:nth-child(2n+1){
 	width: 150px;
 	padding-top: 18px;
 	margin-left: -10px;
-	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .dropdownMenu__item{
 	color: black;
-	background-color: #f1f1f1;
+	background-color: #f7f7f7;
 	display: block;
 	padding: 15px 10px;
 }
