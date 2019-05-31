@@ -1,8 +1,8 @@
 body{
-    font-size:20px;
+    font-size: 20px;
 }
 h3{
-    font-weight:lighter;       
+    font-weight: lighter;       
 }
 h1,h2{
 	margin: 5px 0 !important;	
@@ -26,14 +26,12 @@ h1,h2{
 /* ---------------- FIGURES --------------------*/
 .figure{
     width: 50%;
-    margin:15px;
-}
-.figure--border{
-    border: 1px solid black;
+    margin: 15px;
 }
 .figure--screen{
-    width:100%;
-    margin:15px;
+    width: 100%;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .figure--video{
     margin-top: 50px;
