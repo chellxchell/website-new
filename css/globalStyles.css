@@ -1,14 +1,23 @@
+/*------------------------------------------------*/
+/***				GLOBAL STYLES				***/
+/*------------------------------------------------*/
+
+
+/* ELEMENTS ----------------------------*/
 html{
 	font-family: "Open Sans";	
 }
+
 a{
 	text-decoration: none;	
 }
+
 h1, h2, h3, p{
 	margin: 0;	
 }
 
-/* UTILITIES */
+
+/* UTILITY CLASSES ---------------------*/
 .flexRow, .flexColumn{
 	display: flex;
 	align-items: center;
@@ -18,21 +27,28 @@ h1, h2, h3, p{
 	flex-direction: column;
 }
 
-.sectionTitle{
-    font-family: "Source Sans Pro";
-    font-size:45px;
-    text-align:center;
-}
-
 .colorPink{
 	color: #fc9f9f !important;
 }
 
 .fullWidth{
-	width:100%;
+	width: 100%;
 }
 
-/* BUTTON STYLING */
+
+/* SECTION STYLING ---------------------*/
+.sectionTitle{
+    font-family: "Source Sans Pro";
+    font-size: 45px;
+    text-align: center;
+}
+
+div.section:nth-child(2n+1){
+	background: #f1f1f1;
+}
+
+
+/* BUTTON STYLING ---------------------*/
 button{
     border: none;
 }
@@ -41,22 +57,23 @@ button:hover{
     color:#fc9f9f;
 }
 
-/* NAVBAR */
+
+/* NAVBAR STYLING ---------------------*/
 .topnav{
 	justify-content: flex-end;
 	position: fixed;
+	font-size: 18px;
 	height: 60px;
 	width: 100%;
-	font-size: 18px;
 	margin-top: -10px;
 	z-index: 99;
 	background-color: white;
 }
+
 .topnav__item {
-	margin: 0px 40px 0px 0px;
+	margin: 0 40px 0 0;
 	color: black;
 }
-
 .topnav__item:hover {
     color: #fc9f9f;
     border-bottom: 3px solid #fc9f9f;
@@ -65,15 +82,14 @@ button:hover{
 	border-bottom: none;
 }
 
-div.section:nth-child(2n+1){
-	background: #f1f1f1;
-}
-
-
-/* DROPDOWN MENU */
+/* DROPDOWN STYLING ---------------------*/
 .dropdown {
 	position: relative;
 	display: inline-block;
+}
+.dropdown:hover .dropdownMenu{
+	display: flex;
+	flex-direction: column;
 }
 
 .dropdownMenu{
@@ -85,17 +101,13 @@ div.section:nth-child(2n+1){
 }
 
 .dropdownMenu__item{
-	color: black;
-	background-color: #f7f7f7;
 	display: block;
 	padding: 15px 10px;
+	color: black;
+	background-color: #f7f7f7;
 }
 .dropdownMenu__item:hover{
-	background-color: #fc9f9f;
 	color: white;
+	background-color: #fc9f9f;
 }
 
-.dropdown:hover .dropdownMenu{
-	display: flex;
-	flex-direction: column;
-}

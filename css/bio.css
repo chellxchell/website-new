@@ -1,68 +1,74 @@
- /* ------------------ABOUT SECTION --------------------------*/
- .about{
-    /* margin:0px 15%; */
-    width: 50%;
-  }
-  .about__title{
-    font-family: "Source Sans Pro";
-    font-size:45px;
-    text-align:center;
-    padding-top:75px;
-  }
-  .about__pic{
-    width:100%;
-  }
+/*------------------------------------------------*/
+/***		    BIOGRAPHY STYLING      			 ***/
+/*------------------------------------------------*/
+
+ /* ABOUT SECTION --------------------------*/
+.about{
+	width: 50%;
+}
+
+.about__title{
+	font-family: "Source Sans Pro";
+	font-size: 45px;
+	padding-top: 75px;
+	text-align: center;
+}
+
+.aboutInfo{
+	font-size: 18px;
+	background-color: #f1f1f1;
+}
+
+.aboutInfo__text{
+	margin:20px 50px;
+}
+
+.aboutLink{
+	color: #fc9f9f;
+}
+/* DESIGN PROCESS--------------------------*/
+.process{
+	justify-content: space-around !important;
+	margin-bottom: 50px;
+}
+
+.processItem{
+	justify-content: flex-start !important;
+	/* height:220px; */
+	width: 15%;
+	margin: 10px 0;
+	padding: 10px 0 20px 0;
+	background: #f1f1f1;
+}
   
-  .aboutInfo{
-    width:100%;
-    font-size:18px;
-    background-color: #f1f1f1;
-  }
-  .aboutInfo__text{
-    margin:20px 50px;
-  }
+.processItem__icon{
+	width: 70%;
+	padding-top: 10%;
+}
   
-  /* ------------------DESIGN PROCESS--------------------------*/
-  .process{
-    justify-content: space-around !important;
-  }
-  .processItem{
-    background: #f1f1f1;
-    justify-content: flex-start !important;
-    height:220px;
-    width: 15%;
-    margin:10px;
-    /* padding: 10px; */
-  }
+.processItem__title{
+	font-family: "Source Sans Pro";
+	font-size: 25px;
+	color: #fc9f9f;
+}
+
+.processItem__text{
+	font-size: 15px;
+	margin-left: 10px;
+}
   
-  .processItem__icon{
-      padding-top: 10%;
-      height:150px;
-      width: 150px;
-  }
-  
-  .processItem__title{
-      font-family: "Source Sans Pro";
-      font-size:25px;
-      color: #fc9f9f;
-  }
-  .processItem__text{
-    margin-left:10px;
-    font-size:15px;
-  }
-  
-  @media screen and (max-width: 700px){
-    .process{
-          flex-direction: column;
-    }
-    .processItem{
-      width: 50%;
-      justify-content: center !important;
-    }
-    .processItem__icon{
-      padding:0;
-    }
-    .aboutInfo,.about__pic{
-      width: 100%;
-    }
-  }
+@media screen and (max-width: 700px){
+	.process{
+			flex-direction: column;
+	}
+	.processItem{
+		justify-content: center !important;
+		width: 50%;
+	}
+	.processItem__icon{
+		padding:0;
+	}
+	.aboutInfo,.about__pic{
+		width: 100%;
+	}
+}
