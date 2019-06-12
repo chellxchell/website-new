@@ -111,3 +111,11 @@ button:hover{
 	background-color: #fc9f9f;
 }
 
+
+.contact {
+	height: 8vh; 
+}
+.contact__icon {
+  width: 30px;
+  margin: 0px 10px; 
+}
