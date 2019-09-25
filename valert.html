@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Valert</title>
+        <link rel="stylesheet" href="css/pages.css">
+        <link rel="stylesheet" href="css/globalStyles.css">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    </head>
+
+    <body>
+		<!-- NAVIGATION BAR -->
+		<div class="topnav flexRow">
+            <a class="topnav__item" href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="topnav__item colorPink topnav__item--projects" href="index.html">Projects</a>
+                <div class="dropdownMenu">
+                    <a class="dropdownMenu__item" href="finance-friend.html">Finance Friend</a>
+                    <a class="dropdownMenu__item" href="valert.html">Valert</a>
+                    <a class="dropdownMenu__item" href="daily-ui.html">Daily UI</a>
+                    <a class="dropdownMenu__item" href="quarry.html">Quarry</a>
+                    <a class="dropdownMenu__item" href="concepts.html">Concepts</a>
+					<a class="dropdownMenu__item" href="generator.html">Generator</a>
+                </div>
+            </div>
+            <a class="topnav__item" href="bio.html">Bio</a>
+            <a class="topnav__item" href="https://s3.us-east-2.amazonaws.com/chelly-website/Design+Resume.pdf" target=_blank>Resum&eacute;</a>
+        </div>
+
+        <img class="pageCover" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/valert-cover.png">
+        
+        <div class="section">
+            <h1>A Notification System for TAMs</h1>
+            <p>
+                This past summer, I worked as a UI Developer intern at <a class="link" href="https://vailsys.com">Vail Systems, Inc.</a>, a telephony company based in Chicago. 
+                The project I worked on is called Valert - it is a notification system for Technical Account Managers (TAMs) that triggers email 
+                and SMS alerts when data-specific thresholds in call centers are passed. For example, if a TAM wanted to be notified when 
+                a certain company's call traffic rose to 500 calls per second, they could easily create a “rule” that allows them to customize 
+                these notifications.
+            </p>
+        </div>
+
+        <div class="section">
+            <h1>Need for User-Friendliness</h1>
+            <p>
+                Before Valert, Vail would create rules using a CDR listener application called Trunkmon. Since Trunkmon required more technical experience, 
+                TAMs would have to speak with a manager, who would then create a ticket for operations, which would then need to be approved and reviewed. 
+                This process would take a few days, and was not the most user-friendly towards TAMs. Furthermore, if a TAM wanted to change or delete a rule
+                at a later point, they would have to go through this whole process again.
+                There was an apparent need for a more efficient solution that would allow TAMs to easily create rules with no technical experience.
+            </p>
+            <img class="figure fullWidth" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/diagrams/diagram-trunkmon.png">
+        </div>
+
+        <div class="section">
+            <h1>Organizing the Initial Layout</h1>
+            <p>
+                At the start of the internship, I received a list of required features and pages from my manager. The project called for a table that displayed
+                rules (which had the custom thresholds and notifications that TAMs inputted). Users should be able to create, read, update, and delete rules. Thus,
+                a form (or "Rule Builder") was needed so that TAMs could create new rules and add them to the table.
+                With this information, I created a preliminary user-flow.
+            </p>
+            <img class="figure fullWidth" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/diagrams/flow.png">
+            <p><br>
+                I then started working on what the basic layout of the product would look like.
+                I knew the main page had to be a table of rules that were already in the system, but I needed to sketch options
+                on what this "Rule Builder" would look like.
+            </p>
+            <img class="figure fullWidth" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/01.JPG">
+            <p>
+                After sketching out some options, I created low-fidelity mockups in Figma for each one. I met with the Technical Account Manager assigned to our project
+                and had him try out each prototype.<br>
+            </p>
+            <div class="flexRow fullWidth">
+                <img class="figure boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/low+fidelity/table.png">
+                <img class="figure boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/low+fidelity/sidebar.png">
+            </div>
+            <div class="flexRow">
+                <img class="figure boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/low+fidelity/bottomsheet.png">
+                <img class="figure boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/low+fidelity/inline.png">
+            </div>
+            <p><br>
+                After some observation, it was apparent that the drop-down option was the most efficient - users would be able to click
+                on a row in the table, and that row would expand down to display more detailed information on that particular entry. With this design, users could "open"
+                multiple rows and view them all at once.
+            </p>
+        </div>
+
+        <div class="section">
+            <h1>Building the "Rule Builder</h1>
+            After designing the initial layout of the application, I dove into more detail. With the requirements my manager gave me, 
+            I had to narrow down what each field within the "Rule Builder" looked like. The user had to create a name and description for the rule,
+            add a call threshold (ex. more than 500 calls per second), specify what phone number or email address they wanted to be notified with, what notification
+            would look like, etc.
+            <div class="flexRow fullWidth">
+                <img class="figure-1/3 boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_4483.JPG">
+                <img class="figure-1/3 boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_6288.JPG">
+                <img class="figure-1/3 boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_8702.JPG">
+            </div>
+            <div class="flexRow">
+                <img class="figure boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+1.png">
+                <img class="figure boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+4.png">
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>Creating the UI</h1>
+        </div>
+
+        <div class="section">
+            <h1>Adding Aesthetics</h1>
+        </div>
+
+        <div class="section">
+            <h1>Final Product</h1>
+        </div>
+
+    </body>
+    
+</html>

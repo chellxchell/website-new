@@ -27,6 +27,16 @@ h1,h2{
 /* ---------------- FIGURES --------------------*/
 .figure{
     width: 50%;
+    margin: 10px;
+}
+
+.figure-1\/4{
+    width: 22%;
+    margin: 15px;
+}
+
+.figure-1\/3{
+    width: 30%;
     margin: 15px;
 }
 .figure--screen{
