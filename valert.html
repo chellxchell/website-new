@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/pages.css">
         <link rel="stylesheet" href="css/globalStyles.css">
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
     </head>
 
     <body>
@@ -14,10 +15,10 @@
             <div class="dropdown">
                 <a class="topnav__item colorPink topnav__item--projects" href="index.html">Projects</a>
                 <div class="dropdownMenu">
-                    <a class="dropdownMenu__item" href="finance-friend.html">Finance Friend</a>
                     <a class="dropdownMenu__item" href="valert.html">Valert</a>
-                    <a class="dropdownMenu__item" href="daily-ui.html">Daily UI</a>
+                    <a class="dropdownMenu__item" href="finance-friend.html">Finance Friend</a>
                     <a class="dropdownMenu__item" href="quarry.html">Quarry</a>
+                    <a class="dropdownMenu__item" href="daily-ui.html">Daily UI</a>
                     <a class="dropdownMenu__item" href="concepts.html">Concepts</a>
 					<a class="dropdownMenu__item" href="generator.html">Generator</a>
                 </div>
@@ -102,58 +103,124 @@
             add a call threshold (ex. more than 500 calls per second), specify what phone number or email address they wanted to be notified with, what notification
             would look like, etc.
             <div class="flexRow">
-                <img class="figure-1/3 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_4483.JPG">
-                <img class="figure-1/3 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_6288.JPG">
-                <img class="figure-1/3 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_8702.JPG">
+                <a class="margin-right" target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_4483.JPG"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_4483.JPG"></a>
+                <a class="margin-right" target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_6288.JPG"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_6288.JPG"></a>
+                <a class="margin-right" target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_8702.JPG"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_8702.JPG"></a>
             </div>
+            <p class="caption">Sketches of Rule Builder general layout</p>
 
             <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_1057.JPG"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_1057.JPG"></a>
-
-            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+1.png"><img class="figure boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+1.png"></a>
-            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+4.png"><img class="figure boxShadow" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+4.png"></a>
+            <p class="caption">A more detailed brainstorm for each input field</p>
+        
+            <p><br>
+                Once I had some sketches, I mocked up the Rule Builder in Figma. I focused more on the placement and organization of each input field 
+                rather than aesthetics.
+            </p>
+            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+1.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+1.png"></a>
         </div>
 
         <div class="section">
             <h1>"Medium Fidelity" UI Wireframes</h1>
             <p>
-                Once I decided on the initial layout and created a preliminary Rule Builder, I started to put the pieces together.
+                Once I decided on the initial layout and created a preliminary Rule Builder, I started to put the pieces together. This included 
+                mocking up the rules table with placeholder data. I also mocked up the Alert Logs, which was a table that displayed every SMS or email alerts
+                that had been fired for that particular rule.
 
             </p>
             <div class="flexRow">
-                <a class="margin-right" target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rules+Index.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rules+Index.png"></a>
-                <a class="margin-left" target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rules+Index.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Alert+Logs.png"></a>
+                <div class="flexColumn margin-right">
+                    <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rules+Index.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rules+Index.png"></a>
+                    <p class="caption">Mockup of the rules table</p>
+                </div>
+                <div class="flexColumn margin-left">
+                    <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rules+Index.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Alert+Logs.png"></a>
+                    <p class="caption">The logs of all the alerts that have fired for that particular rule</p>
+                </div>
             </div>
             <div class="flexRow">
-                <a class="margin-right" target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final.png"></a>
-                <a class="margin-left" target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final-errors.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final-errors.png"></a>
+                <div class="flexColumn margin-right">
+                    <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final.png"></a>
+                    <p class="caption">The Rule Builder drops down when the user clicks on a row in the table</p>
+                </div>
+                <div class="flexColumn margin-left">
+                    <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final-errors.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final-errors.png"></a>
+                    <p class="caption">Error messages when a user inputs an unacceptable value</p>
+                </div>
             </div>
         </div>
 
         <div class="section">
             <h1>Adding Aesthetics</h1>
+            <p>
+                After completing the "medium fidelity" wireframes, it was time to add aesthetics. Since Valert is an internal project,
+                I had a lot of freedom when it came to colors and fonts - the only users were Vail employees, thus I didn't need to
+                adhere to any specific style or brand guide.
+            </p><br>
+
+            <p>
+                In addition to the rules table, Rule Builder, and Alert Logs, these wireframes also include success notifications
+                (that appear when an action has successfully been performed on a rule) and notification messages for deleting and saving rules.
+            </p>
+
             <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/1/overview.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/1/overview.png"></a>
+            <p class="caption">
+                My manager prompted me to design a "safe" option - I chose blue as the primary color, and a simple font.
+            </p>
 
             <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/2/overview.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/2/overview.png"></a>
+            <p class="caption">
+                This design falls under "contemporary" - I chose a more vibrant color, rounded out the edges, and chose a font
+                that was more playful yet still readable.
+            </p>
 
             <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/3/overview.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/3/overview.png"></a>
+            <p class="caption">
+                The last design was intended to be "adventurous" - I picked a bright gradient, and messed around with the placement of various elements.
+            </p>
         </div>
 
         <div class="section">
             <h1>Final Design</h1>
-            <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/final/overview.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/final/overview.png"></a>
+            <p>
+                I took elements from my three different aesthetic options and compiled them into one design. The primary color of this design was a bright
+                blue - safe and readable enough, but still vibrant and fun. I also changed the background of the UI as well as the background color 
+                for the table and Rule Builder in order to distinguish these different sections.
+            </p>
+            <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/final/overview.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/final/overview.png"></a>
         </div>
 
         <div class="section">
             <h1>Implementation</h1>
+            <p>
+                Although I do not have access to the current or previous versions of Valert, the following images are screenshots 
+                taken of the final product. 
+            </p>
             <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/Rules+Index.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/Rules+Index.png"></a>
+            <p class="caption">The table of every rule a TAM has created</p>
             <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/both.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/both.png"></a>
+            <p class="caption">When a row is clicked, it expands down into the Rule Builder where the rule can be easily edited or viewed in detail</p>
             <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/cancel+message.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/cancel+message.png"></a>
+            <p class="caption">If a user attempts to navigate away from the rule with no saved changes, they will be prompted with this message</p>
             <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/delete+message.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/delete+message.png"></a>
+            <p class="caption">A confirmation for deleting a rule</p>
             <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/Alert+Logs.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/Alert+Logs.png"></a>
+            <p class="caption">A log of all the SMS and email alerts that have been fired for that particular rule</p>
         </div>
 
         <div class="section">
             <h1>What I Learned</h1>
+            <p>
+                My main takeaway from this internship was that development process and the design process evolve very much hand-in-hand.
+                Though my primary role was designing the UI, I also contributed largely to the actual
+                development of the interface in React. I found how important it was for developers and designers to communicate
+                with each other, and have input in each other's work. Many developers will often avoid participating in design decisions, and
+                vice versa - however these two components of a product are deeply intertwined and having open conversations as a team is essential.
+            </p>
+        </div>
+        
+        <div class="bottomNav">
+            <a class="link margin-left" href="generator.html">&larr; Graphic Design Generator</a>
+            <a class="link margin-right" href="finance-friend.html">Finance Friend &rarr;</a>
         </div>
 
     </body>

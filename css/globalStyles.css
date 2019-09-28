@@ -8,12 +8,19 @@ html{
 	font-family: "Open Sans";	
 }
 
+body{
+	margin-left: 0 !important;
+}
 a{
 	text-decoration: none;	
 }
 
 h1, h2, h3, p{
-	margin: 0;	
+	margin: 0;
+}
+
+h1{
+	font-family: Source Sans Pro;
 }
 
 
@@ -33,6 +40,17 @@ h1, h2, h3, p{
 
 .fullWidth{
 	width: 100%;
+}
+
+.boxShadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.margin-left{
+	margin-left: 10px;
+}
+.margin-right{
+	margin-right: 10px;
 }
 
 
@@ -125,13 +143,15 @@ button:hover{
   margin: 0px 10px; 
 }
 
-.boxShadow{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-.margin-left{
-	margin-left: 10px;
-}
-.margin-right{
-	margin-right: 10px;
+.bottomNav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 18px;
+	font-weight: bold;
+	height: 60px;
+	width: 100%;
+	z-index: 99;
+	background-color: white;
 }
