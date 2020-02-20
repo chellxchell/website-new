@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+  }
 /* ------------------HEADER --------------------------*/
 .header{
   height: 100vh;
@@ -12,6 +15,46 @@
   text-align: center; 
 }
 
+.arrowContainer {
+	height: 25px;
+	padding: 20px;
+	text-align: center;
+}
+.arrowContainer:hover{
+	cursor: pointer;
+}
+.arrowContent {
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	transform: translate(-50%, -50%);
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+	width: 75px;
+	height: 65px;
+}
+#more-arrows:hover polygon {
+	fill: #fc9f9f;
+	transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-bottom {
+	transform: translateY(-18px);
+}
+#more-arrows:hover polygon.arrow-top {
+	transform: translateY(18px);
+}
+polygon {
+	fill: lightgray;
+	transition: all 0.2s ease-out;
+}
+polygon.arrow-middle {
+	opacity: 0.75;
+}
+polygon.arrow-top {
+	opacity: 0.5;
+}
 /* ------------------ABOUT SECTION --------------------------*/
 .about{
   height: 95vh;

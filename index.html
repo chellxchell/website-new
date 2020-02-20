@@ -18,32 +18,32 @@
 		<div class="topnav flexRow">
 			<a class="topnav__item colorPink" href="index.html">Home</a>
 			<a class="topnav__item" href="#projects">Projects</a>
-			<!-- <div class="dropdown">
-				<a class="topnav__item topnav__item--projects" href="index.html">Projects</a>
-				<div class="dropdownMenu">
-					<a class="dropdownMenu__item" href="valert.html">Valert</a>
-					<a class="dropdownMenu__item" href="finance-friend.html">Finance Friend</a>
-					<a class="dropdownMenu__item" href="daily-ui.html">Daily UI</a>
-					<a class="dropdownMenu__item" href="quarry.html">Quarry</a>
-					<a class="dropdownMenu__item" href="concepts.html">Concepts</a>
-					<a class="dropdownMenu__item" href="generator.html">Generator</a>
-				</div>
-			</div> -->
 			<a class="topnav__item" href="pages/bio.html">Bio</a>
 			<a class="topnav__item" href="https://chelly-website.s3.us-east-2.amazonaws.com/Feb-2020-Resume.pdf" target=_blank>Resum&eacute;</a>
 		</div>
 
 		<!-- HOME PAGE -->
 		<div class="header section flexColumn">
-			<h1 class="header__title">Hi, I'm <a class="colorPink" href="bio.html">Chelly.</a></h1>
+			<h1 class="header__title">Hi, I'm <a class="colorPink" href="pages/bio.html">Chelly.</a></h1>
 			<h2 class="header__subtitle fullWidth">I'm a
-				<span class="txt-rotate" data-period="2000" 
-				data-rotate='[ "front-end developer.", "visual designer.", "UX engineer."]'></span>
-			</h2>   
+				<span class="txt-rotate" data-period="2000" data-rotate='[ "front-end developer.", "visual designer.", "UX engineer."]'></span>
+			</h2>
+			<!-- down arrow -->
+			<a href="#about">   
+				<div class="arrowContainer">
+					<div class="arrowContent">
+					<svg id="more-arrows">
+						<polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+						<polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+						<polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+					</svg>
+					</div>
+				</div>
+			</a>
 		</div>
 
 		<!-- ABOUT -->
-		<div class="about section flexColumn">
+		<div class="about section flexColumn" id="about">
 			<h3 class="about__title">about-me.css</h3>
 			<div class="cssCode flexColumn">
 				<p class="cssCode__class">.chelly-education{</p>
@@ -51,14 +51,14 @@
 					<p class="cssCode__value"><span class="colorPink">school:</span> Northwestern University;</p>
 				<p class="cssCode__class">}</p>
 				<p class="cssCode__class">.chelly-tools{</p>
-					<p class="cssCode__value"><span class="colorPink">front-end:</span> Javascript, HTML/CSS, React.JS, ES6;</p>
+					<p class="cssCode__value"><span class="colorPink">front-end:</span> Javascript, HTML, CSS/SCSS, React.JS, ES6;</p>
 					<p class="cssCode__value"><span class="colorPink">object-oriented:</span> Python, Java, C/C++, Swift;</p>
 					<p class="cssCode__value"><span class="colorPink">design:</span> Adobe Suite, Figma, Bootstrap, Sketch;</p>
 				<p class="cssCode__class">}</p>
 				<p class="cssCode__class">.chelly-interests{</p>
-					<p class="cssCode__value"><span class="colorPink">programming:</span> front-end app & web development;</p>
+					<p class="cssCode__value"><span class="colorPink">programming:</span> software engineering, product development;</p>
 					<p class="cssCode__value"><span class="colorPink">design:</span> UI/UX, illustration</p>
-					<p class="cssCode__value"><span class="colorPink">hobbies:</span> dancing, music, Marvel Studios, Star Wars;</p>
+					<p class="cssCode__value"><span class="colorPink">hobbies:</span> electronic music, sci-fi & fantasy movies, art;</p>
 				<p class="cssCode__class">}</p>
 				<p class="cssCode__class">.chelly-resum&eacute;{</p>
 					<p class="cssCode__value"><span class="colorPink">download:</span> url('<a href="https://chelly-website.s3.us-east-2.amazonaws.com/Feb-2020-Resume.pdf" class="colorPink cssCode__resume" target="_blank">resum&eacute;</a>.pdf')</p>
@@ -111,7 +111,7 @@
 				</div>
 				<div class="projectsRow__item flexRow">
 					<a href="pages/generator.html">
-						<div class="projectTitle flexRow fullWidth">Graphic Design Generator</div>
+						<div class="projectTitle flexRow fullWidth">Graphic Design <br>Generator</div>
 						<img class="fullWidth" src="https://s3.us-east-2.amazonaws.com/chelly-website/daily-design/kft.png">
 					</a>
 				</div>
@@ -122,7 +122,8 @@
 		<div class="contact flexRow">
 			<a href="https://github.com/chellxchell" target=_blank><img class="contact__icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/git.png"></a>
 			<a href="https://linkedin.com/in/chellxchell" target=_blank><img class="contact__icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/link.png"></a>
-			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=chelly@u.northwestern.edu" target=_blank><img class="contact__icon" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/mail.png"></a>
+			<a href="https://medium.com/@chellycompendio" target=_blank><img class="contact__icon" id="medium" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/medium.png"></a>
+			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=chelly@u.northwestern.edu" target=_blank><img class="contact__icon" id="mail" src="https://s3.us-east-2.amazonaws.com/chelly-website/images/icons/mail.png"></a>
 		</div>
 
 	</body>

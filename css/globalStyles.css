@@ -139,10 +139,15 @@ button:hover{
 	height: 8vh; 
 }
 .contact__icon {
-  width: 30px;
+	width: 30px;
   margin: 0px 10px; 
 }
-
+#medium{
+	width: 40px;
+}
+#mail{
+	width: 35px;
+}
 
 .bottomNav{
 	display: flex;
