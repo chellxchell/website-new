@@ -100,40 +100,6 @@ button:hover{
 	border-bottom: none;
 }
 
-/* DROPDOWN STYLING ---------------------*/
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-.dropdown:hover .dropdownMenu{
-	display: flex;
-	flex-direction: column;
-}
-
-.dropdownMenu{
-	display: none;
-	position: absolute;
-	width: 150px;
-	padding-top: 18px;
-	margin-left: -10px;
-}
-
-.dropdownMenu__item:last-child{
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
-
-.dropdownMenu__item{
-	display: block;
-	padding: 15px 10px;
-	color: black;
-	background-color: #f7f7f7;
-}
-.dropdownMenu__item:hover{
-	color: white;
-	background-color: #fc9f9f;
-}
-
 
 .contact {
 	height: 8vh; 
@@ -159,4 +125,9 @@ button:hover{
 	width: 100%;
 	z-index: 99;
 	background-color: white;
+}
+
+.footer{
+	font-size: 12px;
+	color: lightgray;
 }
