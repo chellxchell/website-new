@@ -20,14 +20,14 @@ h1,h2{
 }
 
 /* SECTIONS --------------------*/
-.section{
+.section,section{
     padding: 50px 15% 50px 15%;
 }
 
 /* ---------------- FIGURES --------------------*/
 .figure{
     width: 100%;
-    margin-top: 30px;
+    margin: 15px;
 }
 
 .figure-1\/2{
@@ -88,6 +88,7 @@ h1,h2{
     color:white;
 }
 
+/* ---------------- BOX  --------------------*/
 .boxContainer{
     display: flex;
     width: 100%;
@@ -108,4 +109,33 @@ h1,h2{
 }
 .box__title{
     font-weight: bold;
+}
+
+/* ---------------- PARALLAX  --------------------*/
+.parallax{
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.parallax--finance{
+    background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/website-images/fin-fr/ff-cover.png');
+}
+.parallax--quarry{
+    background-image: url('https://s3.us-east-2.amazonaws.com/chelly-website/quarry/quarry-cover.png');
+}
+.parallax--trunk{
+    background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/Cover.png');
+}
+.parallax--valert{
+    background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/valert/valert-cover-2.png');
+}
+
+.projectInfoRow {
+    display: flex;
+    justify-content: space-between;
+}
+.projectInfo {
+    margin: 15px;
 }

@@ -19,24 +19,54 @@
             target=_blank>Resum&eacute;</a>
     </div>
 
-    <img class="pageCover" src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/trunk-cover.png">
+    <div class="parallax--trunk parallax"></div>
+    
+    <section>
+        <h1 class="sectionTitle">The Trunk: Making NU More Sustainable</h1>
+        <div class="projectInfoRow">
+            <div class="projectInfo">
+                <strong class="backgroundPink">Duration:</strong>
+                <p>&#8226; Feb - Mar 2020</p>
+            </div>
+            <div class="projectInfo">
+                <strong class="backgroundPink">Role:</strong>
+                <p>&#8226; Developer</p>
+                <p>&#8226; Researcher</p>
+            </div>
+            <div class="projectInfo">
+                <strong class="backgroundPink">Product made with:</strong>
+                <p>&#8226; React Native</p>
+                <p>&#8226; Javascript</p>
+            </div>
+            <div class="projectInfo">
+                <strong class="backgroundPink">Made for:</strong>
+                <p>&#8226; UX Design class</p>
+            </div>
+        </div>
+    </section>
 
     <div class="section">
-        <h1>The Problem: Moving Furniture at Northwestern</h1>
+        <h1 class="sectionTitle">The Problem: Moving Furniture at Northwestern</h1>
         <p>
             Trunk is a project I worked on during my time in Northwestern's Bay Area Immersion Program.
             I worked as the only developer in a team of design and journalism students. We had to pick an issue
-            that we were passionate about - we decided to go with interior design, and how it pertains to Northwestern's campus.
-            We had all experienced moving into a new apartment or house, and noticed that during moving times there were many
-            couches, desks, and other furniture items that were left on the street. We thought that this process of students moving
+            that we were passionate about - we decided to go with interior design, and how it pertains to Northwestern's
+            campus.
+            We had all experienced moving into a new apartment or house, and noticed that during moving times there were
+            many
+            couches, desks, and other furniture items that were left on the street. We thought that this process of
+            students moving
             was not very sustainable, and wanted to approach this problem.
         </p>
     </div>
-    <div class="section">
-        <h1>Existing Solution: Free and For Sale</h1>
+
+    <section>
+        <h1 class="sectionTitle">Existing Solution: Free and For Sale</h1>
         <p>
-            Currently, the way that Northwestern students buy and sell items is through Facebook's Free and For Sale group. This group
-            is meant to be for Northwestern students, but many alumni who don't live in the area are still part of the group. We identified some problems
+            Currently, the way that Northwestern students buy and sell items is through Facebook's Free and For Sale
+            group. This group
+            is meant to be for Northwestern students, but many alumni who don't live in the area are still part of the
+            group. We identified some problems
             with the group:
         </p>
         <div class="flexRow">
@@ -63,37 +93,56 @@
                 <p class="caption">Way too many members, not all live in the Evanston area</p>
             </div>
         </div>
+        <br>
         <div class="padded">
-            After identifying these problems on Free and For Sale, we started thinking about how we could solve these problems
+            After identifying these problems on Free and For Sale, we started thinking about how we could solve these
+            problems
             and make the moving process easier for Northwestern students.
         </div>
-        <img class="figure--screen"
+        <br>
+        <img class="figure"
             src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/how-might-we.png">
-    </div>
+    </section>
 
-    <div class="section">
-        <h1>Low-Fi Prototypes</h1>
+    <section>
+        <h1 class="sectionTitle">Low-Fi Prototypes: A "Better" Free & For Sale</h1>
+        <p>
+            Our initial prototypes and low-fidelity wireframes were focused on improving the userflow of Facebook's Free & For Sale.
+            With "Dumpst Dive," users could filter and search through items on the app (functionality that is not available in F&FS).
+            With "Last Call," the user could view locations of donation centers for them to drop off unsold items.
+        </p>
         <div class="flexRow">
             <img class="figure-1/2" src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/dumpstr.JPG">
             <img class="figure-1/2"
                 src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/last-call.png">
         </div>
+        <p>We then combined these two similar ideas into one web application prototype.</p>
         <div class="flexRow">
             <img class="figure-1/2" src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/web.png">
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h1>User Feedback</h1>
+    <section>
+        <h1 class="sectionTitle">User Feedback</h1>
         <p>We had several approaches for user feedback.</p>
         <div class="flexRow">
-            <img class="figure-1/3"
-                src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/feedback/survey.png">
-            <img class="figure-1/3"
-                src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/feedback/interview.png">
-            <img class="figure-1/3"
-                src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/feedback/testing.png">
+            <div class="flexColumn">
+                <img class="figure"
+                    src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/feedback/survey.png">
+                <p class="caption">Survey for NU students</p>
+            </div>
+            <div class="flexColumn">
+                <img class="figure"
+                    src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/feedback/interview.png">
+                <p class="caption">Interview other students</p>
+            </div>
+            <div class="flexColumn">
+                <img class="figure"
+                    src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/feedback/testing.png">
+                <p class="caption">Conduct user testing with NU students</p>
+            </div>
         </div>
+        <br><p>After conducting surveys, interviews, and user testing, we found some key takeaways:</p><br>
         <div class="boxContainer">
             <div class="box">
                 <p class="box__title">Students want to buy used furniture</p>
@@ -108,22 +157,46 @@
                 <p class="box__title">Connecting buyer and seller is slow and tedious</p>
             </div>
         </div>
-    </div>
+        <br>
+        <p>We found that the main problem students were having was not the process of buying and selling on Free & For Sale - 
+            the problem people were having was that once they found an item they wanted, it was hard to organize the logistics of picking it
+            up and communicating with the buyer/seller about the item.
+        </p>
+        <p>
+            We decided to pivot, and rather than redesigning the userflow of F&FS, we decided to abstract the process away from the user to 
+            make these actions as easy and painless as possible.
+        </p>
+    </section>
 
-    <div class="section">
-        <h1>Journey Mapping</h1>
-        <img class="figure--screen"
+    <section>
+        <h1 class="sectionTitle">Reevaluating: Journey Mapping</h1>
+        <p>With a new direction in mind, we decided to make journey maps of potential users.</p>
+        <img class="figure"
             src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/journey-maps/buyer.JPG">
-        <img class="figure--screen"
+        <p>
+            The first journey map we did was for a buyer, before using Trunk. The buyer has to
+            look through F&FS, decide what items they want, and message the seller. There's no guarantee that
+            the item is still available, or that the seller will even message the user back.
+        </p>
+        <img class="figure"
             src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/journey-maps/seller.JPG">
-        <img class="figure--screen"
+        <p>
+            We also did a journey map for a seller before using Trunk. There's no guarantee that anybody
+            will message them, and they might even get lowballed.
+        </p>
+        <img class="figure"
             src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/journey-maps/both.JPG">
-    </div>
+        <p>
+            This is the journey map for potential users of Trunk. The process of negotiating and interacting with
+            another student is simplified, and abstracted away.
+        </p>
+    </section>
 
 
-    <div class="section">
-        <h1>Wireframes in Figma</h1>
-        <img class="figure--screen"
+    <section>
+        <h1 class="sectionTitle">Wireframes in Figma</h1>
+        <p>In Figma, we fleshed out the interface and user flow of the app.</p>
+        <img class="figure"
             src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/wireframes/all-wireframes.png">
         <div class="flexRow">
             <img class="figure-1/3"
@@ -141,6 +214,7 @@
             <img class="figure-1/3"
                 src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/wireframes/Profile.png">
         </div>
+        <p>Some key improvements of this app compared to F&FS are:</p>
         <div class="boxContainer">
             <div class="box">
                 <p class="box__title">Centralized store</p>
@@ -155,15 +229,21 @@
                 <p class="box__title">Seller doesn't have to move anything</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h1>React Native: Final Product</h1>
-        <img class="figure--screen" src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/app.png">
-        <img class="figure--screen" src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/app2.png">
+    <section>
+        <h1 class="sectionTitle">React Native: Final Product</h1>
+        <p>
+            After the wireframes were finalized, I developed a barebones application in React Native using Expo Client. 
+            A lot of the app is hardcoded, but this product is meant to be a demo for users to "get the idea."
+            To avoid using a router, the navigation is done with a Controller.js component that keeps a global
+            state of what page the user is on, and returns corresponding components accordingly.
+        </p>
+        <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/app.png">
+        <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/trunk/app2.png">
         <p>Check out our <a class="link" target=_blank href="https://github.com/davidyoon4/ux-design">GitHub
                 Repository</a> to view our final prototype!</p>
-    </div>
+    </section>
 
     <div class="bottomNav">
         <a class="link margin-left" href="valert.html">&larr; Valert</a>

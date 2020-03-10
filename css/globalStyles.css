@@ -37,6 +37,9 @@ h1{
 .colorPink{
 	color: #fc9f9f !important;
 }
+.backgroundPink{
+	background-color: #fc9f9f;
+}
 
 .fullWidth{
 	width: 100%;
@@ -57,11 +60,10 @@ h1{
 /* SECTION STYLING ---------------------*/
 .sectionTitle{
     font-family: "Source Sans Pro";
-    font-size: 45px;
-    text-align: center;
+	font-size: 45px;
 }
 
-div.section:nth-child(2n+1){
+div.section:nth-child(2n+1),section:nth-child(2n+1){
 	background: #f1f1f1;
 }
 
