@@ -94,12 +94,12 @@ button:hover{
 	margin: 0 40px 0 0;
 	color: black;
 }
-.topnav__item:hover {
-    color: #fc9f9f;
-    border-bottom: 3px solid #fc9f9f;
-}
-.topnav__item--projects:hover{
-	border-bottom: none;
+.topnav__item:hover,.pinkUnderline{
+	background-image: linear-gradient(120deg, #fc9f9f 0%, #fc9f9f 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.55em;
+	background-position: 0 105%;
+	transition: background-size 0.25s ease-in;
 }
 
 
