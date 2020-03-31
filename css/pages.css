@@ -12,6 +12,9 @@ h3{
 h1,h2{
 	margin: 10px 0 5px 0 !important;	
 }
+img {
+    image-orientation: from-image;
+}
 
 /* COVER --------------------*/
 .pageCover{
@@ -130,6 +133,9 @@ h1,h2{
 }
 .parallax--valert{
     background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/valert/valert-cover-2.png');
+}
+.parallax--nudge{
+    background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/nudge/nudge-cover.png');
 }
 
 .projectInfoRow {
