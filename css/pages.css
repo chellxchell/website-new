@@ -137,6 +137,9 @@ img {
 .parallax--nudge{
     background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/bay-area/nudge/nudge-cover.png');
 }
+.parallax--freedom{
+    background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/freedom-link-cover.png');
+}
 
 .projectInfoRow {
     display: flex;
