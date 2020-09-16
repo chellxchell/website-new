@@ -20,7 +20,7 @@
 		<a class="topnav__item homeLink pinkUnderline" href="index.html">Home</a>
 		<a class="topnav__item projectsLink" href="#projects">Projects</a>
 		<a class="topnav__item" href="pages/bio.html">Bio</a>
-		<a class="topnav__item" href="https://chelly-website.s3.us-east-2.amazonaws.com/SWE+Intern+Resume.pdf"
+		<a class="topnav__item" href="https://chelly-website.s3.us-east-2.amazonaws.com/New-Grad-Resume.pdf"
 			target=_blank>Resum&eacute;</a>
 	</div>
 
@@ -29,7 +29,7 @@
 		<h1 class="header__title">Hi, I'm <a class="colorPink" href="pages/bio.html">Chelly.</a></h1>
 		<h2 class="header__subtitle fullWidth">I'm a
 			<span class="txt-rotate" data-period="2000"
-				data-rotate='[ "front-end developer.", "visual designer.", "UX engineer."]'></span>
+				data-rotate='[ "software engineer.", "full-stack developer"]'></span>
 		</h2>
 		<!-- down arrow -->
 		<a href="#about">
@@ -48,42 +48,64 @@
 
 	<!-- ABOUT -->
 	<div class="about section flexColumn" id="about">
-		<h3 class="about__title">about-me.css</h3>
-		<div class="cssCode flexColumn">
-			<p class="cssCode__class">.chelly-education{</p>
-			<p class="cssCode__value"><span class="colorPink">year:</span> Junior;</p>
-			<p class="cssCode__value"><span class="colorPink">school:</span> Northwestern University;</p>
-			<p class="cssCode__class">}</p>
-			<p class="cssCode__class">.chelly-tools{</p>
-			<p class="cssCode__value"><span class="colorPink">front-end:</span> Javascript, HTML, CSS/SCSS, React/React
-				Native;</p>
-			<p class="cssCode__value"><span class="colorPink">object-oriented:</span> Python, Java, C/C++, Swift;</p>
-			<p class="cssCode__value"><span class="colorPink">design:</span> Adobe Suite, Figma, Bootstrap, Sketch;</p>
-			<p class="cssCode__class">}</p>
-			<p class="cssCode__class">.chelly-interests{</p>
-			<p class="cssCode__value"><span class="colorPink">programming:</span> software engineering, product
-				development;</p>
-			<p class="cssCode__value"><span class="colorPink">design:</span> UI/UX, illustration</p>
-			<p class="cssCode__value"><span class="colorPink">hobbies:</span> electronic music, sci-fi & fantasy movies,
-				art;</p>
-			<p class="cssCode__class">}</p>
-			<p class="cssCode__class">.chelly-resum&eacute;{</p>
-			<p class="cssCode__value"><span class="colorPink">download:</span> url('<a
-					href="https://chelly-website.s3.us-east-2.amazonaws.com/SWE+Intern+Resume.pdf"
-					class="colorPink cssCode__resume" target="_blank">resum&eacute;</a>.pdf')</p>
-			<p class="cssCode__class">}</p>
+		<h3 class="about__title">about-me.json</h3>
+		<div class="code flexColumn">
+			{
+			<p class="code__class">"education": {</p>
+			<p class="code__value"><span class="colorPink">"major":</span> "Computer Science",</p>
+			<p class="code__value"><span class="colorPink">"year":</span> "Senior",</p>
+			<p class="code__value"><span class="colorPink">"school":</span> "Northwestern University"</p>
+			<p class="code__class">},</p>
+			<p class="code__class">"skills": {</p>
+			<p class="code__value"><span class="colorPink">"front-end":</span> ["JavaScript", "React/React
+				Native", "SCSS/CSS"],</p>
+			<p class="code__value"><span class="colorPink">"back-end":</span> ["MongoDB", "Node.js"],</p>
+			<p class="code__value"><span class="colorPink">"object-oriented":</span> ["Python", "Java", "C/C++"],</p>
+			<p class="code__class">},</p>
+			<p class="code__class">"interests": {</p>
+			<p class="code__value"><span class="colorPink">"programming":</span> software engineering, full-stack
+				development,</p>
+			<p class="code__value"><span class="colorPink">"hobbies":</span> ["EDM", "sci-fi & fantasy movies", "games", "art"]</p>
+			<p class="code__class">},</p>
+			<p class="code__class">"resum&eacute;":</p>
+			<p class="code__value"><span class="colorPink">"download":</span> require('<a
+					href="https://chelly-website.s3.us-east-2.amazonaws.com/New-Grad-Resume.pdf"
+					class="colorPink code__resume" target="_blank">resum&eacute;</a>.pdf')</p>
+			<p class="code__class">}</p>
+			}
 		</div>
 	</div>
 
-	<!-- PROJECTS -->
+	<!-- INTERNSHIP PROJECTS -->
 	<div class="projects section flexColumn" id="projects">
-		<h3 class="sectionTitle">Projects</h3>
+		<h3 class="sectionTitle">Internship Projects</h3>
 		<div class="projectsRow flexRow">
+			<div class="projectsRow__item flexRow">
+				<a href="pages/off-chance.html">
+					<div class="projectTitle flexRow fullWidth">Off Chance</div>
+					<img class="fullWidth"
+						src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Thumbnail.png">
+				</a>
+			</div>
 			<div class="projectsRow__item flexRow">
 				<a href="pages/valert.html">
 					<div class="projectTitle flexRow fullWidth">Valert</div>
 					<img class="fullWidth"
 						src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/valert-laptop.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- PROJECTS -->
+	<div class="projects section flexColumn" >
+		<h3 class="sectionTitle">Class Projects</h3>
+
+		<div class="projectsRow flexRow">
+			<div class="projectsRow__item flexRow">
+				<a href="pages/freedom-link.html">
+					<div class="projectTitle flexRow fullWidth">Freedom Link</div>
+					<img class="fullWidth"
+						src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/freedom-link-laptop.png">
 				</a>
 			</div>
 			<div class="projectsRow__item flexRow">
@@ -113,7 +135,7 @@
 	</div>
 
 	<!-- GRAPHICS -->
-	<div class="projects section flexColumn">
+	<!-- <div class="projects section flexColumn">
 		<h3 class="sectionTitle">Graphic Design</h3>
 		<div class="projectsRow flexRow">
 			<div class="projectsRow__item flexRow">
@@ -130,7 +152,7 @@
 				</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- CONTACT -->
 	<div class="contact flexRow">

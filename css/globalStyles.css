@@ -33,6 +33,9 @@ h1{
 .flexColumn{
 	flex-direction: column;
 }
+.flexStart{
+	align-items: flex-start
+}
 
 .colorPink{
 	color: #fc9f9f !important;

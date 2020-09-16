@@ -62,40 +62,42 @@ polygon.arrow-top {
 }
 
 .about__title{
-	width: 700px;
+	width: 750px;
 	font-weight: lighter;
 	text-align: center;
 	padding: 10px 0px;
 	border-radius: 5px 5px 0px 0px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background: #d5d5d5; 
+	padding-left: 5px
 }
 
-.cssCode{
+.code{
 	justify-content: flex-start;
 	align-items: flex-start !important;
 	height: 475px;
-	width: 700px;
+	width: 750px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 0px 0px 5px 5px;
 	font-size: 18px;
 	color: white; 
 	background: #404040;
+	padding-left: 5px
 }
-.cssCode__class{
-	text-indent: 10px;
+.code__class{
+	text-indent: 20px;
 	color: #7eb0b8; 
 }
-.cssCode__value{
+.code__value{
 	text-indent: 50px; 
 }
-.cssCode__resume:hover{
+.code__resume:hover{
 	text-decoration: underline; 
 }
 
 /* ------------------PROJECTS --------------------------*/
 .projects{
-  padding: 75px 0px; 
+  padding: 75px 0 0 0; 
 }
 
 .projectsRow{

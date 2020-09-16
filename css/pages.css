@@ -140,11 +140,20 @@ img {
 .parallax--freedom{
     background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/freedom-link-cover.png');
 }
-
+.parallax--offchance{
+    background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Cover.png');
+}
 .projectInfoRow {
     display: flex;
     justify-content: space-between;
 }
 .projectInfo {
     margin: 15px;
+}
+
+
+.column-1\/2 {
+    height: 100%;
+    width: 50%;
+    padding-right:5%;
 }

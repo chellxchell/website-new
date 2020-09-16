@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Off Chance</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/globalStyles.css">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+    </head>
+
+    <body>
+		<!-- NAVIGATION BAR -->
+		<div class="topnav flexRow">
+            <a class="topnav__item" href="../index.html">Home</a>
+			<a class="topnav__item" href="../index.html#projects">Projects</a>
+            <a class="topnav__item" href="bio.html">Bio</a>
+            <a class="topnav__item" href="https://chelly-website.s3.us-east-2.amazonaws.com/New-Grad-Resume.pdf" target=_blank>Resum&eacute;</a>
+        </div>
+
+        <div class="parallax--offchance parallax"></div>
+
+        <section>
+            <h1 class="sectionTitle">Off Chance: A Live Raffle Platform</h1>
+            <div class="projectInfoRow">
+                <div class="projectInfo">
+                    <strong class="backgroundPink">Duration:</strong>
+                    <p>&#8226; June - Aug 2020</p>
+                </div>
+                <div class="projectInfo">
+                    <strong class="backgroundPink">Role:</strong>
+                    <p>&#8226; Full Stack Intern</p>
+                </div>
+                <div class="projectInfo">
+                    <strong class="backgroundPink">Tech Stack:</strong>
+                    <p>&#8226; React Native</p>
+                    <p>&#8226; Node.JS</p>
+                    <p>&#8226; MongoDB</p>
+                </div>
+                <div class="projectInfo">
+                    <strong class="backgroundPink">Made for:</strong>
+                    <p>&#8226; Summer Internship</p>
+                </div>
+            </div>
+            <p>
+                This past summer, I worked remotely as a Full Stack intern at <a class="link" href="https://www.offchance.com/" target="_blank">Off Chance</a>, a small startup based in New York. 
+                Their live raffle platform, which raffles off streetwear and sneakers and gives the proceeds to charity, already had a functioning website - 
+                however, the company wanted to move to a mobile platform. Our task as interns was to create the mobile app, with extended functionality, from scratch.
+                <br><br>
+                My role was mostly front-end development, as well as some back-end development and design. I designed the user
+                interface in Figma, helped create the database in MongoDB and API using Node.js, and implemented front-end functionality in React Native.
+            </p>
+        </section>
+
+        <div class="section">
+            <h1>Extended Functionality Sketches</h1>
+            Although Off Chance had a functioning website, the founder wanted to add functionality to the platform. This extended functionality included
+            profile management, a wallet system, a game where users could earn additional chances, display of the top donors for the week, and more. <br>
+            I based the sketches off of the web app, and added more screens for the extended functionality.
+            <div class="flexRow">
+                <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/sketches/1.png">
+                <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/sketches/2.png">
+                <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/sketches/3.png">
+                <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/sketches/4.png">
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>Creating the Design</h1>
+            <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Wireframes.png">
+        </div>
+
+        <div class="section">
+            <h1>Displaying Trending Raffles</h1>
+            <div class="flexRow flexStart">
+                <div class="column-1/2">
+                    <p class="colorPink">Design</p>
+                    Originally, the app was going to just going to display all of the raffles one-by-one from top to bottom. However, after some user feedback,
+                    we decided to change the home screen to have multiple horizontal carousels to display different categories of raffles. At the very top was trending
+                    raffles, because this would be the most important section that users should see first. We also wanted to display cards for the Top 5 Donors of the week,
+                    and for the latest winners for the most recent raffles. I made the section for these two black, so that it had a high contrast with the rest of the page and
+                    it would be apparent that the section displayed users, not raffles.<br>
+                </div>
+                <div class="column-1/2">
+                    <p class="colorPink">Development</p>
+                    To separate each raffles into categories, I used the raffle query route for our API that returned raffles based on a certain field in the database.
+                    For trending raffles, I fetched all the raffles, and added a field in the returned JSON object for a score. I calculated the score by weighing likes by 30%
+                    and entries by 70%. I then sorted the array of JSON objects by the score field and returned the first 10 entries.
+                </div>
+            </div>
+
+            <div class="flexRow">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/home-scroll.gif">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/home-toggle.gif">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/home-feed.gif">
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>Profile Management</h1>
+            <div class="flexRow">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/profile-edit.gif">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/profile-feed.gif">
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>Gamifying the Platform</h1>
+            <div class="flexRow">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/raffle-enter.gif">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/RPS.gif">
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>The Live Drawing Experience</h1>
+            <div class="flexRow">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/live-drawing.gif">
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>Final Product</h1>
+            <div class="flexRow">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/app-store-images/Explore.png">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/app-store-images/Game.png">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/app-store-images/Raffle.png">
+                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/app-store-images/Winner.png">
+            </div>
+            The Github repo where all the code lives is private, but the application is in the works to be published in the App Store
+            and Google Play Store.
+            Check out this marketing video made by Sam Clark, featuring wireframes made by me!
+            <div class="flexRow">
+                <iframe id="vid" class="figure--video" width="100%" height="570" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Demo.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>What I Learned</h1>
+            <p>
+                The most important thing I learned during this internship was how to communicate with people in non-technical roles. 
+                Throughout the internship
+            </p>
+        </div>
+        
+        <div class="bottomNav">
+            <a class="link margin-left" href="finance-friend.html">&larr; Finance Friend</a>
+            <a class="link margin-right" href="valert.html">Valert &rarr;</a>
+        </div>
+
+    </body>
+</html>
