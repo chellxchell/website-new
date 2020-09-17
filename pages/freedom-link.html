@@ -1,243 +1,195 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Freedom Link</title>
-        <link rel="stylesheet" href="../css/pages.css">
-        <link rel="stylesheet" href="../css/globalStyles.css">
-        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
-    </head>
 
-    <body>
-		<!-- NAVIGATION BAR -->
-		<div class="topnav flexRow">
-            <a class="topnav__item" href="../index.html">Home</a>
-			<a class="topnav__item" href="../index.html#projects">Projects</a>
-            <a class="topnav__item" href="bio.html">Bio</a>
-            <a class="topnav__item" href="https://chelly-website.s3.us-east-2.amazonaws.com/New-Grad-Resume.pdf" target=_blank>Resum&eacute;</a>
-        </div>
+<head>
+    <title>Freedom Link</title>
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/globalStyles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+</head>
 
-        <div class="parallax--freedom parallax"></div>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="topnav flexRow">
+        <a class="topnav__item" href="../index.html">Home</a>
+        <a class="topnav__item" href="../index.html#projects">Projects</a>
+        <a class="topnav__item" href="bio.html">Bio</a>
+        <a class="topnav__item" href="https://chelly-website.s3.us-east-2.amazonaws.com/New-Grad-Resume.pdf"
+            target=_blank>Resum&eacute;</a>
+    </div>
 
-        <section>
-            <h1 class="sectionTitle">Freedom Link: Advocate For Your Loved Ones</h1>
-            <div class="projectInfoRow">
-                <div class="projectInfo">
-                    <div class="projectInfo__header">Duration:</div>
-                    <div class="projectInfo__values">
-                        <p>&#8226; Mar - Jun 2020</p>
-                    </div>
-                </div>
-                <div class="projectInfo">
-                    <div class="projectInfo__header">Role:</div>
-                    <div class="projectInfo__values">
-                        <p>&#8226; Software Developer</p>
-                    </div>
-                </div>
-                <div class="projectInfo">
-                    <div class="projectInfo__header">Front-end Tech Stack:</div>
-                    <div class="projectInfo__values">
-                        <p>&#8226; React</p>
-                        <p>&#8226; JavaScript</p>
-                        <p>&#8226; SCSS</p>                    </div>
-                </div>
-                <div class="projectInfo">
-                    <div class="projectInfo__header">Team:</div>
-                    <div class="projectInfo__values">
-                        <p>&#8226; 7 CS students</p>             </div>
-                </div>
-                <div class="projectInfo">
-                    <div class="projectInfo__header">Made for:</div>
-                    <div class="projectInfo__values">
-                        <p>&#8226; Agile Development Class</p>
-                    </div>
+    <div class="parallax--freedom parallax"></div>
+
+    <section>
+        <h1 class="sectionTitle">Freedom Link: Advocate For Your Loved Ones</h1>
+        <div class="projectInfoRow">
+            <div class="projectInfo">
+                <div class="projectInfo__header">Duration:</div>
+                <div class="projectInfo__values">
+                    <p>&#8226; Mar - Jun 2020</p>
                 </div>
             </div>
-            <p>
-                Freedom Link is a project I worked on for an Agile Development course. I worked in a small team as a software developers
-                with six other students. After the end of the year, I continued to work on the project with two other members of the original team. <br>
-                Freedom Link is a platform that offers a simple way for the early release of loved ones from the Illinois Department of Corrections.
-                As of April 2020, more than 15% of all documented novel COVID-19 cases in Illinois could be linked to just one facility - the Cook County Jail.
-                Freedom Link offers the chance for people to petition for the early release or furlough of their loved ones in the system, so that we may
-                help flatten the curve and ensure the safety of inmates.<br>
-                For a quick overview of this issue, check out <a href="https://www.youtube.com/watch?v=MuxnH0VAkAM" target=_blank class="link">John Oliver's piece on Coronavirus in Prisons & Jails.</a>
-            </p>
-        </section>
-
-        <div class="section">
-            <h1>Need to Understand Release Criteria</h1>
-            <p>
-                With COVID-19 rampant in 2020, there was an increased need for people to petition for early release, furlough, or house arrest for their loved ones.
-                However, this proved difficult as an inmate must meet certain criteria in order to be eligible (i.e. they must be vulnerable to COVID-19).
-                We needed a way to help users find out what their loved one is eligible for. The idea was that the user would lookup their loved one using their
-                government-issued IDOC number, and then see what release criteria they were eligible for.
-            </p>
-            <img class="figure padded bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/four-panels/initial.png">
-            <p class="caption">The story of a potential user of Freedom Link</p>
-
-        </div>
-
-        <div class="section">
-            <h1>Organizing the Initial Layout</h1>
-            <p>
-                At the start of the internship, I received a list of required features and pages from my manager. TAMs would be able to open up the application
-                and see a table of every rule a TAM has made. Once a new rule was created, it would be added to the table - thus, 
-                a form (or "Rule Builder") was needed so that TAMs could create new rules and add them to the table.
-                With this information, I created a preliminary user-flow.
-            </p>
-            <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/diagrams/flow.png">
-            <p><br>
-                I then started working on what the basic layout of the product would look like.
-                I knew the main page had to be a table of rules that were already in the system, but I needed to sketch options
-                on how the "Rule Builder" would interact with the main table.
-            </p>
-            <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/01.JPG">
-            <p><br>
-                After sketching out some options, I created low-fidelity mockups in Figma for each one. I met with the Technical Account Manager assigned to our project
-                and had him try out each prototype.<br>
-            </p>
-            <div class="flexRow">
-                <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/low+fidelity/table.png">
-                <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/low+fidelity/sidebar.png">
-            </div>
-            <div class="flexRow">
-                <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/low+fidelity/bottomsheet.png">
-                <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/low+fidelity/inline.png">
-            </div>
-            <p><br>
-                After some observation, it was apparent that the last option with the dropdown was the most efficient - users would be able to click
-                on a row in the table, and that row would expand down to display more detailed information on that particular entry. With this design, users could "open"
-                multiple rows and view them all at once.
-            </p>
-        </div>
-
-        <div class="section">
-            <h1>Building the "Rule Builder"</h1>
-            After designing the initial layout of the application, I dove into more detail. With the requirements my manager gave me, 
-            I had to narrow down what each field within the "Rule Builder" looked like. The user had to create a name and description for the rule,
-            add a call threshold (ex. more than 500 calls per second), specify what phone number or email address they wanted to be notified with, what notification
-            would look like, etc.
-            <div class="flexRow">
-                <a class="margin-right" target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_4483.JPG"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_4483.JPG"></a>
-                <a class="margin-right" target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_6288.JPG"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_6288.JPG"></a>
-                <a class="margin-right" target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_8702.JPG"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_8702.JPG"></a>
-            </div>
-            <p class="caption">Sketches of Rule Builder general layout</p>
-
-            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_1057.JPG"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/sketches/IMG_1057.JPG"></a>
-            <p class="caption">A more detailed brainstorm for each input field</p>
-        
-            <p><br>
-                Once I had some sketches, I mocked up the Rule Builder in Figma. I focused more on the placement and organization of each input field 
-                rather than aesthetics.
-            </p>
-            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+1.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rule+Builder+1.png"></a>
-        </div>
-
-        <div class="section">
-            <h1>"Medium Fidelity" UI Wireframes</h1>
-            <p>
-                Once I decided on the initial layout and created a preliminary Rule Builder, I started to put the pieces together. This included 
-                mocking up the rules table with placeholder data. I also mocked up the Alert Logs, which was a table that displayed every SMS or email alerts
-                that had been fired for that particular rule.
-
-            </p>
-            <div class="flexRow">
-                <div class="flexColumn margin-right">
-                    <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rules+Index.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rules+Index.png"></a>
-                    <p class="caption">Mockup of the rules table</p>
-                </div>
-                <div class="flexColumn margin-left">
-                    <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Rules+Index.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/Alert+Logs.png"></a>
-                    <p class="caption">The logs of all the alerts that have fired for that particular rule</p>
+            <div class="projectInfo">
+                <div class="projectInfo__header">Role:</div>
+                <div class="projectInfo__values">
+                    <p>&#8226; Front-End Software Developer</p>
                 </div>
             </div>
-            <div class="flexRow">
-                <div class="flexColumn margin-right">
-                    <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final.png"></a>
-                    <p class="caption">The Rule Builder drops down when the user clicks on a row in the table</p>
+            <div class="projectInfo">
+                <div class="projectInfo__header">Front-end Tech Stack:</div>
+                <div class="projectInfo__values">
+                    <p>&#8226; React</p>
+                    <p>&#8226; JavaScript</p>
+                    <p>&#8226; SCSS</p>
                 </div>
-                <div class="flexColumn margin-left">
-                    <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final-errors.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/medium+fidelity/final-errors.png"></a>
-                    <p class="caption">Error messages when a user inputs an unacceptable value</p>
+            </div>
+            <div class="projectInfo">
+                <div class="projectInfo__header">Team:</div>
+                <div class="projectInfo__values">
+                    <p>&#8226; 7 CS students</p>
+                </div>
+            </div>
+            <div class="projectInfo">
+                <div class="projectInfo__header">Made for:</div>
+                <div class="projectInfo__values">
+                    <p>&#8226; Agile Development Class</p>
                 </div>
             </div>
         </div>
+            Freedom Link is a project I worked on for an Agile Development course. I worked in a small team as a
+            software developers
+            with six other students. After the end of the year, I continued to work on the project with two other
+            members of the original team. <br>
+            Freedom Link is a platform that offers a simple way for the early release of loved ones from the Illinois
+            Department of Corrections.
+            As of April 2020, more than 15% of all documented novel COVID-19 cases in Illinois could be linked to just
+            one facility - the Cook County Jail.
+            Freedom Link offers the chance for people to petition for the early release or furlough of their loved ones
+            in the system, so that we may
+            help flatten the curve and ensure the safety of inmates.<br>
+            For a quick overview of this issue, check out <a href="https://www.youtube.com/watch?v=MuxnH0VAkAM"
+                target=_blank class="link">John Oliver's piece on Coronavirus in Prisons & Jails.</a>
+            Check out this link to the <a class="link" target="_blank" href="http://freedom-generator.s3-website-us-east-1.amazonaws.com/">Final Product!</a>
+    </section>
 
-        <div class="section">
-            <h1>Adding Aesthetics</h1>
-            <p>
-                After completing the "medium fidelity" wireframes, it was time to add aesthetics. Since Valert is an internal project,
-                I had a lot of freedom when it came to colors and fonts - the only users were Vail employees, thus I didn't need to
-                adhere to any specific style or brand guide.
-            </p><br>
+    <div class="section">
+        <h1>Need to Understand Release Criteria</h1>
+        <p>
+            With COVID-19 rampant in 2020, there was an increased need for people to petition for early release,
+            furlough, or house arrest for their loved ones.
+            However, this proved difficult as an inmate must meet certain criteria in order to be eligible (i.e. they
+            must be vulnerable to COVID-19).
+            We needed a way to help users find out what their loved one is eligible for. The idea was that the user
+            would lookup their loved one using their
+            government-issued IDOC number, and then see what release criteria they were eligible for.
+        </p>
+        <img class="figure padded bordered"
+            src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/four-panels/initial.png">
+        <p class="caption">The story of a potential user of Freedom Link</p>
 
-            <p>
-                In addition to the rules table, Rule Builder, and Alert Logs, these wireframes also include success notifications
-                (that appear when an action has successfully been performed on a rule) and notification messages for deleting and saving rules.
-            </p>
+    </div>
 
-            <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/1/overview.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/1/overview.png"></a>
-            <p class="caption">
-                My manager prompted me to design a "safe" option - I chose blue as the primary color, and a simple font.
-            </p>
-
-            <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/2/overview.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/2/overview.png"></a>
-            <p class="caption">
-                This design falls under "contemporary" - I chose a more vibrant color, rounded out the edges, and chose a font
-                that was more playful yet still readable.
-            </p>
-
-            <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/3/overview.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/3/overview.png"></a>
-            <p class="caption">
-                The last design was intended to be "adventurous" - I picked a bright gradient, and messed around with the placement of various elements.
-            </p>
-        </div>
-
-        <div class="section">
-            <h1>Final Design</h1>
-            <p>
-                I took elements from my three different aesthetic options and compiled them into one design. The primary color of this design was a bright
-                blue - safe and readable enough, but still vibrant and fun. I also changed the background of the UI as well as the background color 
-                for the table and Rule Builder in order to distinguish these different sections.
-            </p>
-            <a target=_blank href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/final/overview.png"><img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/wireframes/aesthetics/final/overview.png"></a>
-        </div>
-
-        <div class="section">
-            <h1>Implementation</h1>
-            <p>
-                Although I do not have access to the current or previous versions of Valert, the following images are screenshots 
-                taken of the final product. 
-            </p>
-            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/Rules+Index.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/Rules+Index.png"></a>
-            <p class="caption">The table of every rule a TAM has created</p>
-            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/both.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/both.png"></a>
-            <p class="caption">When a row is clicked, it expands down into the Rule Builder where the rule can be easily edited or viewed in detail</p>
-            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/cancel+message.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/cancel+message.png"></a>
-            <p class="caption">If a user attempts to navigate away from the rule with no saved changes, they will be prompted with this message</p>
-            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/delete+message.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/delete+message.png"></a>
-            <p class="caption">A confirmation for deleting a rule</p>
-            <a target="blank" href="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/Alert+Logs.png"><img class="figure bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/UI/Alert+Logs.png"></a>
-            <p class="caption">A log of all the SMS and email alerts that have been fired for that particular rule</p>
-        </div>
-
-        <div class="section">
-            <h1>What I Learned</h1>
-            <p>
-                My main takeaway from this internship was that development process and the design process evolve very much hand-in-hand.
-                Though my primary role was designing the UI, I also contributed largely to the actual
-                development of the interface in React. I found how important it was for developers and designers to communicate
-                with each other, and have input in each other's work. Many developers will often avoid participating in design decisions, and
-                vice versa - however these two components of a product are deeply intertwined and having open conversations as a team is essential.
-            </p>
-        </div>
-        
-        <div class="bottomNav">
-            <a class="link margin-left" href="generator.html">&larr; Graphic Design Generator</a>
-            <a class="link margin-right" href="trunk.html">The Trunk &rarr;</a>
-        </div>
-
-    </body>
+    <div class="section">
+        <h1>An Accessible Design</h1>
+        We wanted to make the interface accessible and easily readable. I collaborated with a couple of my teammates to create these
+        wireframes in Figma. The designs featured very large text, especially on the mobile version.
+        <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/wireframes.png">
+    </div>
     
+    <div class="section">
+        <h1>First Demo: One-Page Application</h1>
+        For our first demo with our client, a Northwestern Law Professor, we built a simple one-page application where the user could input
+        their loved one's IDOC number and see the different release criteria they were eligible for.
+        <div class="flexRow">
+            <img class="figure-1/2" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/first-demo.png">
+        </div>
+        <br> Although our client liked the application, it only showed the user what release criteria their loved one was eligible for, and didn't
+        offer any direction for next steps. The client wanted the user to actually be able to email the IDOC officials and file a petition to get their loved ones released.
+        We spent the rest of the quarter implementing this functionality.
+    </div>
+
+    <div class="section">
+        <h1>Implementation</h1>
+        Although we were assuming that the users knew how to use the IDOC number they were given, we added an extending onboarding process for the user.
+        This included FAQs, and more information on eligibility criteria. We also included an example email so that the user would know what to put in their
+        message to IDOC officials.
+
+        <div class="flexStart flexRow">
+            <img class="figure-1/2 bordered"
+                src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/Home.png">
+            <img class="figure-1/2 bordered"
+                src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/Before+You+Begin.png">
+        </div>
+        <div class="flexStart flexRow">
+            <img class="figure-1/2 bordered"
+                src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/FAQ.png">
+            <img class="figure-1/2 bordered"
+                src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/example+email.png">
+        </div>
+
+        <br> Like before, the user could enter in the IDOC number to see their loved one's eligibility for release. After 
+        seeing this, they could draft a petition for release in the web app, and the app will connect to their gmail account to 
+        send the email to the IDOC officials.
+        <div class="flexStart flexRow">
+            <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/Step+1.png">
+            <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/step+2.png">
+        </div>
+        <div class="flexStart flexRow">
+            <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/eligibility+criteria.png">
+            <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/step+3.png">
+        </div>
+        <div class="flexStart flexRow">
+            <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/step+3+filled.png">
+            <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/interface/email+draft.png">
+        </div>
+    </div>
+
+    <div class="section">
+        <h1>Reflection</h1>
+        At the end of the project, we updated out 4-panel story for a user of Freedom Link.
+        <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/four-panels/final.png">
+        After working with a Northwestern law professor as our client, we came up with some lessons learned and defined some things
+        that we would have wanted to do with the project given more time.
+        <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/reflection.png">
+        Check out the <a class="link" href="https://github.com/cs394-s20/freedom-generator">Github Repository</a> to see
+        our project! Go to this link to see <a class="link" target="_blank" href="http://freedom-generator.s3-website-us-east-1.amazonaws.com/">the final product!</a>
+    </div>
+
+    <div class="section">
+        <h1>Others also liked...</h1>
+        <div class="flexRow">
+            <div class="projectsRow__item flexRow">
+                <a href="off-chance.html">
+                    <div class="projectTitle flexRow fullWidth">Off Chance</div>
+                    <img class="fullWidth"
+                        src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Thumbnail.png">
+                </a>
+            </div>
+            <div class="projectsRow__item flexRow">
+                <a href="valert.html">
+                    <div class="projectTitle flexRow fullWidth">Valert</div>
+                    <img class="fullWidth"
+                        src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/valert-laptop.png">
+                </a>
+            </div>
+            <div class="projectsRow__item flexRow">
+                <a href="trunk.html">
+                    <div class="projectTitle flexRow fullWidth">The Trunk</div>
+                    <img class="fullWidth"
+                        src="https://chelly-website.s3.us-east-2.amazonaws.com/website-images/thumbnails/trunk.png">
+                </a>
+            </div>
+            <div class="projectsRow__item flexRow">
+                <a href="nudge.html">
+                    <div class="projectTitle flexRow fullWidth">Nudge</div>
+                    <img class="fullWidth"
+                        src="https://chelly-website.s3.us-east-2.amazonaws.com/website-images/thumbnails/nudge.png">
+                </a>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="back-to-top" title="Go to top"> &uarr;</button>
+        <script src="../js//back-to-top.js"></script>
+</body>
+
 </html>

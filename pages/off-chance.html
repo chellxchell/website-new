@@ -19,6 +19,7 @@
 
         <div class="parallax--offchance parallax"></div>
 
+        <!-- HEADER SECTION -->
         <section>
             <h1 class="sectionTitle">Off Chance: A Live Raffle Platform</h1>
             <div class="projectInfoRow">
@@ -81,89 +82,206 @@
 
         <div class="section">
             <h1>Creating the Design</h1>
+            After I had the layout sketched out, I went on to create wireframes in Figma. There were multiple iterations of design for each section, and
+            I worked closely with the founder to get the designs to the final version seen below. A couple of the screens were inspired by the
+            design on the website, but most were designed from scratch as a lot of new functionality was added to the mobile application.
             <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Wireframes.png">
         </div>
 
         <div class="section">
             <h1>Displaying Trending Raffles</h1>
-            <div class="flexRow flexStart">
-                <div class="column-1/2">
-                    <p class="colorPink">Design</p>
-                    Originally, the app was going to just going to display all of the raffles one-by-one from top to bottom. However, after some user feedback,
-                    we decided to change the home screen to have multiple horizontal carousels to display different categories of raffles. At the very top was trending
-                    raffles, because this would be the most important section that users should see first. We also wanted to display cards for the Top 5 Donors of the week,
-                    and for the latest winners for the most recent raffles. I made the section for these two black, so that it had a high contrast with the rest of the page and
-                    it would be apparent that the section displayed users, not raffles.<br>
-                </div>
-                <div class="column-1/2">
-                    <p class="colorPink">Development</p>
-                    To separate each raffles into categories, I used the raffle query route for our API that returned raffles based on a certain field in the database.
-                    For trending raffles, I fetched all the raffles, and added a field in the returned JSON object for a score. I calculated the score by weighing likes by 30%
-                    and entries by 70%. I then sorted the array of JSON objects by the score field and returned the first 10 entries.
-                </div>
-            </div>
+            <h2>Making the Home Page Immersive</h2>
+            Originally, the app was going to just going to display all of the raffles one-by-one from top to bottom. However, after some user feedback,
+            we decided to change the home screen to have multiple horizontal carousels to display different categories of raffles. At the very top was trending
+            raffles, because this would be the most important section that users should see first. We also wanted to display cards for the Top 5 Donors of the week,
+            and for the latest winners for the most recent raffles.
 
+            <h2>Development: Sorting Raffles and Users</h2>
+            To separate each raffles into categories, I used the raffle query route for our API that returned raffles based on a certain field in the database.
+            For trending raffles, I calculated a score by weighing likes by 30% and entries by 70%. I then sorted the array of JSON objects by their score. <br>
+            For the Top 5 donors, I added timestamps in the raffle schema to check when the last time a raffle was donated to. I took the donations made in the last week, tallied them up,
+            and took the top 5 donors.
+
+            <div class="flexStart flexRow">
+                <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/db/raffle.png">
+                <img class="figure-1/2 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/db/user.png">
+            </div>
+            <p class="caption" style="text-align: center;">Schemas for Raffles and Users in MongoDB</p>
+            <br>
+
+            <h2>Design: "My Feed"</h2>
+            I made the background color black for the horizontal carousels that display users rather than raffles. This was to help the user distinguish between
+            the two different types of sections.
+            When a user clicks "See All" for a horizontal carousel, they are taken to a page with more detailed information for that section.
+            The user can filter by the type of raffle, and like a raffle to get notified when it goes live.
+            Since we wanted users to feel more immersed in the app, we added a feed that displayed raffles posted by people the user is following.
+            
             <div class="flexRow">
-                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/home-scroll.gif">
-                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/home-toggle.gif">
-                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/home-feed.gif">
+                <img class="figure-1/3" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/home-scroll.gif">
+                <img class="figure-1/3" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/home-toggle.gif">
+                <img class="figure-1/3" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/home-feed.gif">
             </div>
         </div>
 
         <div class="section">
             <h1>Profile Management</h1>
+            <h2>Followers & Hosting</h2>
+            One of the features that the website did not have was profile management. Although the users could log in, there was no functionality 
+            for following other users or seeing their activity. Another big thing that the founder wanted to add was a different kind of account for artists
+            or influencers to host their own raffles for their own products. We also wanted to add a wallet feature, so that the user could just reload
+            their wallet and use those chances towards a raffle of their choice.
+
+            <h2>Development: The User Schema</h2>
+            For keeping track of the followers and following, we had a field in the user schema for each. Every time the user wanted to follow somebody,
+            we would modify their user schema and add the appropriate user id to the array. We also had a field to keep track of if the user was a host or not,
+            since some functionality was limited to hosts only. The user would have to submit a form through the application and get approved to become a host.
             <div class="flexRow">
-                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/profile-edit.gif">
-                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/profile-feed.gif">
+                <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/editprofile.gif">
+                <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/profile-followers.gif">
+                <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/profile-feed.gif">
+                <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/host.gif">
             </div>
+
+            <h2>Design: User vs. Verified Host</h2>
+            To distinguish between a regular user and a verified host, a green check mark was added to the profile of the host. The host had access
+            to a dashboard, where they could see all their raffled items that were live and pending approval, as well as different stats for those raffles.
         </div>
 
         <div class="section">
             <h1>Gamifying the Platform</h1>
+            <h2>Drawing Users In</h2>
+            The founder wanted a way to reward users for more engagement with the app. We came up with a solution - to gamify the platform,
+            and allow users to win bonus chances for a raffle after they've already signed up for it. After the user picked their size and paid 
+            for chances to enter into the raffle, the app would take them to a rock-paper-scissors game where they could win more chances.
+            
+            <h2>Development: Dummy Opponents</h2>
+            Originally, the founder wanted to have users compete against other users for more bonus chances. However, we thought this would take 
+            too long to implement for just one piece of the app, so we decided to have the users play agains pre-determined dummy accounts in the database.
+            The pre-determined account would just randomly pick a choice in the game, and the user would pick their own choice. We set a timer so that the
+            app would pick a choice for the user if they took too long. We also capped the bonus chances that they could win at half the chances they bought for the raffle.
             <div class="flexRow">
-                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/raffle-enter.gif">
-                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/RPS.gif">
+                <img class="figure-1/3 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/raffle-edit.gif">
+                <img class="figure-1/3 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/RPS.gif">
             </div>
+
+            <h2>Design: Catering to the Userbase</h2>
+            I made an initial design for rock-paper-scissors. It was a simple two-screen interface where the user would pick a choice and see the results
+            of the match on the next screen. However, we wanted to cater to the userbase, so we replaced the simple images with images of The Rock, Nike Air
+            Force 1 Scissor, and money. We also displayed the user's information and the information of their opponent to make it feel more like a game.
+            <div class="flexRow">
+                <img class="figure-1/2" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/designs/old-RPS.png">
+                <img class="figure-1/2" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/designs/new-RPS.png">
+            </div>
+            <p class="caption">The old RPS design vs. the new RPS design</p>
         </div>
 
         <div class="section">
             <h1>The Live Drawing Experience</h1>
-            <div class="flexRow">
-                <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/live-drawing.gif">
+            <h2>Making An Immersive Experience</h2>
+            <div class="flexRow flexStart">
+                One of the most important things that the founder wanted to revamp was the live drawing experience, where users would be able to see
+                the winner of a raffle being picked in real time. On the website, the users would watch a wheel spin and land on the avatar of the winner. 
+                However, the founder wanted to make the whole experience more immersive and incorporate a live chat.
+                He also wanted users that didn't win the grand prize to win a "consolation prize," or more chances that could be used for a later raffle.<br>
+                <img class="figure--small" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/old-LDE.gif">
             </div>
+            We came up with the idea of "drawing cards" to make the whole experience immersive. When the user drew their own card, it would show them 
+            the prize they won. They could then click on other users' cards to see what they won.
+            <br><br>
+
+            <h2>Development: Live Chat & Social Media Sharing</h2>
+            For the live chat, we used <a class="link" href="https://socket.io/">Socket.io</a>.
+            To give users the option to share their cards to social media, I used the <a class="link" href="https://docs.expo.io/versions/latest/sdk/sharing/">Expo Sharing Library.</a>
+            I used an <a class="link" href="https://www.npmjs.com/package/react-native-confetti-cannon">npm package</a> to simulate the confetti. Since we didn't compress any pictures,
+            before uploading them to IBM Cloud object storage, they were still a bit slow in loading. 
+            <div class="flexRow">
+                <img class="figure-1/3 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/live-drawing.gif">
+                <img class="figure-1/3 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/gifs/live-drawing-share.gif">
+            </div>
+
+            <h2>Design: Displaying the User's Prizes</h2>
+            Since we wanted users to walk away with a feeling that they still gained something even if they didn't win the raffle,
+            we created four tiers of consolation prizes. Each tier would get a different number of chances that could be used towards
+            another raffle.
+
+            <div class="flexRow">
+                <img class="figure-1/2" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Backcards.png">
+            </div>
+            <p class="caption" style="text-align: center;">The back of the card that's populated with the user's avatar</p>
+            <br>The back of the card would populate with the users' profile pictures. The design of these were inspired by Pokemon cards.
+            After a user clicks on one, it turns over to reveal the prize for that user.
+            <div class="flexRow">
+                <img class="figure" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Cards.png">
+            </div>
+            <p class="caption">The front of the card that tells the user what prize they won</p>
         </div>
 
         <div class="section">
             <h1>Final Product</h1>
+            The Github repo where all the code lives is private, but the application is in the works to be published in the App Store
+            and Google Play Store.
             <div class="flexRow">
                 <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/app-store-images/Explore.png">
                 <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/app-store-images/Game.png">
                 <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/app-store-images/Raffle.png">
                 <img class="figure-1/4" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/app-store-images/Winner.png">
             </div>
-            The Github repo where all the code lives is private, but the application is in the works to be published in the App Store
-            and Google Play Store.
-            Check out this marketing video made by Sam Clark, featuring wireframes made by me!
+            <p class="caption">Visuals for the Apple App Store</p><br>
             <div class="flexRow">
-                <video id="vid" width="100%" height="570" controls>
+                <video class="bordered" id="vid" width="100%" height="570" controls>
                     <source src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Demo.mp4" type="video/mp4">
                 </video>
-                <!-- <iframe id="vid" class="figure--video" width="100%" height="570" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Demo.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe> -->
             </div>
+            <p class="caption"><br>A marketing video made by Sam Clark, featuring wireframes by me</p>
         </div>
 
         <div class="section">
             <h1>What I Learned</h1>
             <p>
                 The most important thing I learned during this internship was how to communicate with people in non-technical roles. 
-                Throughout the internship
+                Throughout the internship, I worked with non-technical team members to determine what functionality was possible in the scope
+                of the internship, what resources it would require, and how long it would take to implement. This helped me gain a high-level 
+                understanding of our tech stack as I had to work with others to fit all the pieces of the product together.<br><br>
+                Another thing I learned from this internship was how to find a balance between implementing things efficiently and implementing them
+                quickly. Since the workload was heavy and the time period we had was short, we had to figure out as a team what functionality
+                would have to be sacrificed. If I had more time, I would have done more testing for the application and more refactoring out repeat
+                code.
             </p>
         </div>
-        
-        <div class="bottomNav">
-            <a class="link margin-left" href="finance-friend.html">&larr; Finance Friend</a>
-            <a class="link margin-right" href="valert.html">Valert &rarr;</a>
+        <div class="section">
+            <h1>Others also liked...</h1>
+            <div class="flexRow">
+                <div class="projectsRow__item flexRow">
+                    <a href="valert.html">
+                        <div class="projectTitle flexRow fullWidth">Valert</div>
+                        <img class="fullWidth"
+                            src="https://chelly-website.s3.us-east-2.amazonaws.com/valert/valert-laptop.png">
+                    </a>
+                </div>
+                <div class="projectsRow__item flexRow">
+                    <a href="freedom-link.html">
+                        <div class="projectTitle flexRow fullWidth">Freedom Link</div>
+                        <img class="fullWidth"
+                            src="https://chelly-website.s3.us-east-2.amazonaws.com/freedom-link/freedom-link-laptop.png">
+                    </a>
+                </div>
+                <div class="projectsRow__item flexRow">
+                    <a href="trunk.html">
+                        <div class="projectTitle flexRow fullWidth">The Trunk</div>
+                        <img class="fullWidth"
+                            src="https://chelly-website.s3.us-east-2.amazonaws.com/website-images/thumbnails/trunk.png">
+                    </a>
+                </div>
+                <div class="projectsRow__item flexRow">
+                    <a href="nudge.html">
+                        <div class="projectTitle flexRow fullWidth">Nudge</div>
+                        <img class="fullWidth"
+                            src="https://chelly-website.s3.us-east-2.amazonaws.com/website-images/thumbnails/nudge.png">
+                    </a>
+                </div>
+            </div>
         </div>
+        <button onclick="topFunction()" id="back-to-top" title="Go to top">	&uarr;</button>
 
         <script>
             // start video at 1 second so its not a blank screen
@@ -171,6 +289,7 @@
             this.currentTime = 1;
             }, false);
         </script>
+        <script src="../js//back-to-top.js"></script>
     </body>
 
 </html>
