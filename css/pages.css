@@ -143,14 +143,31 @@ img {
 .parallax--offchance{
     background-image: url('https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Cover.png');
 }
+
+/* ---------------- PROJECT INFO  --------------------*/
 .projectInfoRow {
     display: flex;
     justify-content: space-between;
 }
 .projectInfo {
     margin: 15px;
+    background-color: white;
+    width: 20%;
 }
-
+.projectInfo:last-child {
+    margin-right: 0
+}
+.projectInfo:first-child {
+    margin-left: 0
+}
+.projectInfo__header {
+    font-weight: bold;
+    background-color: #fc9f9f;
+    padding: 2%;
+}
+.projectInfo__values {
+    padding: 2%;
+}
 
 .column-1\/2 {
     height: 100%;

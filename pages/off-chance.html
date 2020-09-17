@@ -23,22 +23,36 @@
             <h1 class="sectionTitle">Off Chance: A Live Raffle Platform</h1>
             <div class="projectInfoRow">
                 <div class="projectInfo">
-                    <strong class="backgroundPink">Duration:</strong>
-                    <p>&#8226; June - Aug 2020</p>
+                    <div class="projectInfo__header">Duration:</div>
+                    <div class="projectInfo__values">
+                        <p>&#8226; June - Aug 2020</p>
+                    </div>
                 </div>
                 <div class="projectInfo">
-                    <strong class="backgroundPink">Role:</strong>
-                    <p>&#8226; Full Stack Intern</p>
+                    <div class="projectInfo__header">Role:</div>
+                    <div class="projectInfo__values">
+                        <p>&#8226; Full Stack Intern</p>
+                    </div>
                 </div>
                 <div class="projectInfo">
-                    <strong class="backgroundPink">Tech Stack:</strong>
-                    <p>&#8226; React Native</p>
-                    <p>&#8226; Node.JS</p>
-                    <p>&#8226; MongoDB</p>
+                    <div class="projectInfo__header">Tech Stack:</div>
+                    <div class="projectInfo__values">
+                        <p>&#8226; React Native</p>
+                        <p>&#8226; Node.JS</p>
+                        <p>&#8226; MongoDB</p>                    </div>
                 </div>
                 <div class="projectInfo">
-                    <strong class="backgroundPink">Made for:</strong>
-                    <p>&#8226; Summer Internship</p>
+                    <div class="projectInfo__header">Team:</div>
+                    <div class="projectInfo__values">
+                        <p>&#8226; 4 full stack interns</p>
+                        <p>&#8226; 1 non-technical PM</p>
+                        <p>&#8226; 1 CEO/founder</p>                 </div>
+                </div>
+                <div class="projectInfo">
+                    <div class="projectInfo__header">Made for:</div>
+                    <div class="projectInfo__values">
+                        <p>&#8226; Summer Internship</p>
+                    </div>
                 </div>
             </div>
             <p>
@@ -55,7 +69,8 @@
             <h1>Extended Functionality Sketches</h1>
             Although Off Chance had a functioning website, the founder wanted to add functionality to the platform. This extended functionality included
             profile management, a wallet system, a game where users could earn additional chances, display of the top donors for the week, and more. <br>
-            I based the sketches off of the web app, and added more screens for the extended functionality.
+            I based the sketches off of the web app, and added more screens for the extended functionality. I worked closely with the founder and project manager
+            to get these sketches approved, then moved on to making wireframes in Figma.
             <div class="flexRow">
                 <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/sketches/1.png">
                 <img class="figure-1/4 bordered" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/sketches/2.png">
@@ -130,7 +145,10 @@
             and Google Play Store.
             Check out this marketing video made by Sam Clark, featuring wireframes made by me!
             <div class="flexRow">
-                <iframe id="vid" class="figure--video" width="100%" height="570" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Demo.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                <video id="vid" width="100%" height="570" controls>
+                    <source src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Demo.mp4" type="video/mp4">
+                </video>
+                <!-- <iframe id="vid" class="figure--video" width="100%" height="570" src="https://chelly-website.s3.us-east-2.amazonaws.com/off-chance/Demo.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe> -->
             </div>
         </div>
 
@@ -147,5 +165,12 @@
             <a class="link margin-right" href="valert.html">Valert &rarr;</a>
         </div>
 
+        <script>
+            // start video at 1 second so its not a blank screen
+            document.getElementById('vid').addEventListener('loadedmetadata', function() {
+            this.currentTime = 1;
+            }, false);
+        </script>
     </body>
+
 </html>
